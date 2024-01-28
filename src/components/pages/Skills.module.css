@@ -1,0 +1,42 @@
+.container {
+    padding: 7%;
+    background-color: #232323;
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.skills h1 {
+    color: #ffdab9;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.skills h2 {
+    background-color: peachpuff;
+    color: peachpuff;
+    height: 5vh;
+}
+
+.icons {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+}
+
+.icons svg {
+    height: 20vh; 
+    width: 33%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icons svg:hover {
+    transform: scale(1.2);
+}

@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #ffdab9;
+}
+
+.container h1 {
+    font-family: 'GFS Didot', serif;
+    color: #232323;
+    font-size: 2.5em;
+}
+
+.container span {
+    font-family: 'GFS Didot', serif;
+    color: #ff9900;
+    font-size: 1.7em;
+}
+
+.container p {
+    font-family: 'GFS Didot', serif;
+    color: #232323;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.container button {
+    padding: 8px;
+    margin-top: 21px;
+    border-radius: 8px;
+    border: none;
+    color: #FFF;
+    font-size: 1.2em;
+    background-color: #223;
+}
+
+.container button:hover {
+    color: #ff9900;
+}
+
+.container img {
+    height: 53vh;
+    width: auto;
+    padding: 100px;
+    border-radius: 50%;
+}
