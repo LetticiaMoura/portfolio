@@ -1,7 +1,6 @@
 
 import Navbar from './components/layout/Navbar';
 import Home from './components/pages/Home';
-import About from './components/pages/About';
 import Skills from './components/pages/Skills';
 import Projects from './components/pages/Projects';
 import Contact from './components/pages/Contact';
@@ -20,16 +19,6 @@ function App() {
         <Navbar />
 
         <Home />
-
-      </div>
-
-      <div id='ABOUT'>
-
-        <About />
-
-      </div>
-
-      <div id='ABOUT'>
 
       </div>
 

@@ -10,18 +10,14 @@ function Navbar() {
         },
         {
             id: 2,
-            title: "ABOUT",
-        },
-        {
-            id: 3,
             title: "SKILLS",
         },
         {
-            id: 4,
+            id: 3,
             title: "PROJECTS",
         },
         {
-            id: 5,
+            id: 4,
             title: "CONTACT",
         },
     ]
