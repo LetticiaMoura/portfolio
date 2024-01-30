@@ -21,7 +21,7 @@ function Home() {
                 
             </div>
 
-           <img className={Styles.perfil} src={Perfil} alt='Perfil Photo'/>
+           <img className={Styles.perfil} src={Perfil} alt='Profile Photo'/>
 
         </div>
 
