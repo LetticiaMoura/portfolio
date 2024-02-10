@@ -15,7 +15,7 @@ function Home() {
 
                 <p className="text-2xl md:text-2xl font-mono text-center  md:text-start font-gfs-didot">I'am Frontend Developer</p>
 
-                <button className='m-5 p-2 rounded-md hover:text-orange hover:bg-slate-gray bg-slate-800 text-center bg-slate-blue'> <Curriculum /> </button>
+                <button className='m-5 p-2 text-slate-white rounded-md hover:bg-slate-gray bg-slate-800 text-center bg-slate-blue'> <Curriculum /> </button>
                 
             </div>
 

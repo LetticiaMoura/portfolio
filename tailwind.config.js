@@ -11,9 +11,10 @@ export default {
     },
     colors: {
       'pessego': '#ffdab9',
-      'orange': '#f97316',
+      'orange': '#FFBB33',
       'slate-blue': '#020617',
       'slate-gray': '#0f172a',
+      'slate-white': '#f1f5f9',
       
       },
   },

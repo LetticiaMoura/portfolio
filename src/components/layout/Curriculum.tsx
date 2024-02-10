@@ -2,7 +2,7 @@ import  { Component } from 'react';
 
 import curriculum from '../../assets/curriculoLM.pdf';
 
-import Styles from './Curriculum.module.css';
+//import Styles from './Curriculum.module.css';
 
 class Curriculum extends Component {
 
@@ -10,7 +10,7 @@ class Curriculum extends Component {
 
     return (
 
-        <div className={Styles.button}>
+        <div>
 
           <a href = {curriculum} target = "_blank">Curriculum</a>
 
