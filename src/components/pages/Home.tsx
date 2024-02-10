@@ -3,8 +3,6 @@ import Curriculum from '../layout/Curriculum';
 
 import Perfil from '../../assets/image.jpg';
 
-//import Styles from './Home.module.css';
-
 function Home() {
 
     return(
