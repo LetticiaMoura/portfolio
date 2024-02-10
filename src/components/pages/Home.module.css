@@ -1,3 +1,6 @@
+
+
+/*
 .container {
     display: flex;
     align-items: center;
@@ -23,7 +26,7 @@
     color: #232323;
     font-size: 1.4em;
     font-weight: 600;
-}
+}*/
 
 .container button {
     padding: 8px;
@@ -37,11 +40,4 @@
 
 .container button:hover {
     color: #ff9900;
-}
-
-.container img {
-    height: 53vh;
-    width: auto;
-    padding: 100px;
-    border-radius: 50%;
 }
