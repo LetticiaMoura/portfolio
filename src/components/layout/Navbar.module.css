@@ -1,10 +1,10 @@
-.navbar {
+/*.navbar {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 2em;
     background-color: #ffdab9;
-}
+}*/
 
 .navbar h1 {
     margin-left: 100px;
@@ -17,6 +17,7 @@
     color: #FFBB33;
 }
 
+/*
 .navbar ul {
     display: flex;
     font-family: 'IBM Plex Sans Arabic', sans-serif;
@@ -26,9 +27,9 @@
 }
 
 .navbar a {
-    color: #000000;
+    color: #000000;-
     opacity: 90%;
-    font-weight: 500;
+    font-weight: 500;-
     font-size: 1.5em;
     margin-right: 40px;
     text-decoration: none;
@@ -37,4 +38,4 @@
 .navbar a:hover{
     color: #FFBB33;
     text-decoration: underline;
-}
+}*/

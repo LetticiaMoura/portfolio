@@ -10,11 +10,13 @@ function App() {
 
   return (
 
-    <div>
+    <div className='scroll-smooth focus:scroll-auto'>
 
       <div id='HOME'>
 
         <Navbar />
+        
+        <div className="bg-transparent h-px pg-1 bg-orange-light"/>
 
         <Home />
 

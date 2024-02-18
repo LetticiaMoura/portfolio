@@ -1,5 +1,5 @@
 
-import Styles from './Navbar.module.css';
+//import Styles from './Navbar.module.css';
 
 function Navbar() {
 
@@ -24,19 +24,20 @@ function Navbar() {
 
     return(
 
-        <nav className={Styles.navbar}>
+        <nav className="py-8 flex flex-wrap items-center justify-evenly p-2 h-20 bg-pessego">
 
-            <h1>LM <span> | </span> PORTFOLIO</h1>
+            <h1 className="font-gfs-didot text-2xl font-bold opacity-90">LM <span className="text-orange"> | </span> PORTFOLIO</h1>
 
-            <ul>
+            <ul className="md:flex xl:flex justify-evenly list-none text-center text-slate-950 hidden block">
 
                 {menuItems.map(menu => (
 
-                    <li> <a href={ `#${menu.title}` } > { menu.title } </a> </li>
+                    <li className="font-gfs-didot opacity-90"> <a className="font-medium hover:underline hover:underline-offset-4 text-2xl	" href={ `#${menu.title}` } > { menu.title } </a> </li>
 
                 ))}
 
             </ul>
+            
 
         </nav>
 
