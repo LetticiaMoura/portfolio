@@ -28,7 +28,7 @@ function Navbar() {
 
             <h1 className="font-gfs-didot text-2xl font-bold opacity-90">LM <span className="text-orange"> | </span> PORTFOLIO</h1>
 
-            <ul className="md:flex xl:flex justify-evenly list-none text-center text-slate-950 hidden block">
+            <ul className="md:flex xl:flex justify-evenly list-none text-center text-slate-950 hidden">
 
                 {menuItems.map(menu => (
 

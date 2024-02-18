@@ -9,7 +9,7 @@ function Home() {
 
         <div className="flex flex-col-reverse space-y-20 md:space-y-0 md:flex-row items-center md:justify-around p-8 bg-pessego md:h-screen">
 
-            <div className='h-[40vh]'>
+            <div className="h-[40vh] p-8 text-center">
 
                 <h1 className="py-2.5 text-3xl md:text-4xl font-mono text-center md:text-start font-gfs-didot">Hello, my name is <br></br> <span className="font-gfs-didot text-orange text-start text-5xl md:text-7xl font-mono"> Leticia Moura </span> </h1>
 
@@ -19,7 +19,7 @@ function Home() {
                 
             </div>
 
-           <img className="hidden md:block pt-1/5 shadow-lg shadow-slate-blue/50 h-2/6 md:h-96 rounded-full" src={Perfil} alt='Profile Photo'/>
+           <img className="rounded-s-full pt-1/5 shadow-lg shadow-slate-blue/50 h-2/6 md:h-96 md:rounded-full" src={Perfil} alt='Profile Photo'/>
 
         </div>
 
