@@ -1,4 +1,4 @@
-.footer {
+/*.footer {
     background-color: rgb(255, 201, 155);
     color: #FFFFFF;
     padding: 2em;
@@ -7,7 +7,6 @@
     left: 0;
     bottom: 0;
 }
-
 .footer ul{
     display: flex;
     justify-content: center;
@@ -36,4 +35,4 @@
 .copy_right span{
     font-weight: bold;
     color: #ffffff;
-}
+}*/
