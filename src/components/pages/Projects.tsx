@@ -5,18 +5,22 @@ import jogo from '../../assets/jogo_da_velha.png';
 import ponto from '../../assets/notas.jpg';
 import site from '../../assets/website1.jpeg'
 
-import Styles from './Projects.module.css';
-
 function Projects() {
 
     return(
 
-        <div className={Styles.container}>
+        <div className="h-auto bg-pessego font-gfs-didot">
 
-            <h1> <span>   PROJECTS    </span></h1>
+            <h1 className="text-3xl text-center p-9"> PROJECTS</h1>
 
-            <div className={Styles.col_card}>
+            <div className="flex justify-around gap-11 flex-wrap pb-10">
 
+            <Card 
+                title='Time Tracking App'
+                img={ponto}
+                description='Digital Time Tracking App'
+                language='React Native'
+            />
             <Card 
                 title='Time Tracking App'
                 img={ponto}
@@ -32,6 +36,18 @@ function Projects() {
             />
 
              <Card 
+                title='Home Page Makeup'
+                img={site}
+                description='makeup showcase'
+                language='HTML | CSS'
+            />
+            <Card 
+                title='Home Page Makeup'
+                img={site}
+                description='makeup showcase'
+                language='HTML | CSS'
+            />
+            <Card 
                 title='Home Page Makeup'
                 img={site}
                 description='makeup showcase'
