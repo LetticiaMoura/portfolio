@@ -9,11 +9,11 @@ function Projects() {
 
     return(
 
-        <div className="h-auto bg-pessego font-gfs-didot">
+        <div className="h-auto bg-pessego font-gfs-didot p-10">
 
-            <h1 className="text-3xl text-center p-9"> PROJECTS</h1>
+            <h1 className="text-3xl text-center bg-slate-blue text-pessego h-12 p-2"> PROJECTS</h1>
 
-            <div className="flex justify-around gap-11 flex-wrap pb-10">
+            <div className="flex justify-around gap-11 flex-wrap p-10 pb-10">
 
             <Card 
                 title='Time Tracking App'
@@ -21,13 +21,6 @@ function Projects() {
                 description='Digital Time Tracking App'
                 language='React Native'
             />
-            <Card 
-                title='Time Tracking App'
-                img={ponto}
-                description='Digital Time Tracking App'
-                language='React Native'
-            />
-
              <Card 
                 title='Tic Tac Toe'
                 img={jogo}
@@ -36,18 +29,6 @@ function Projects() {
             />
 
              <Card 
-                title='Home Page Makeup'
-                img={site}
-                description='makeup showcase'
-                language='HTML | CSS'
-            />
-            <Card 
-                title='Home Page Makeup'
-                img={site}
-                description='makeup showcase'
-                language='HTML | CSS'
-            />
-            <Card 
                 title='Home Page Makeup'
                 img={site}
                 description='makeup showcase'
