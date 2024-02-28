@@ -1,0 +1,17 @@
+{
+    "contactMe": [],
+    "categories": [
+        {
+            "id": 1,
+            "name": "Interesse"
+        },
+        {
+            "id": 2,
+            "name": "Dúvida"
+        },
+        {
+            "id": 3,
+            "name": "Dica"
+        }
+    ]
+}
