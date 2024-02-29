@@ -20,7 +20,7 @@ const Select = ({text, name, options, value, onChange }: selects) => {
             <option>Selecione uma opção: </option>
 
             {options.map( (option: any) => (
-                <option value={option.name} key={option.id}>{option.name} </option>
+                <option value={option.name} key={option.id}> {option.name} </option>
             ) )}
 
         </select>
