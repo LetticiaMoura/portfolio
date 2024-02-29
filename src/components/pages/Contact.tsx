@@ -110,7 +110,7 @@ function Contact() {
                     onChange={handleChange}
                 />
             
-                <a href='/contact' onClick={handleSubmit}>Enter</a>
+                <a type='submit' href='/contact' onClick={handleSubmit}>Enter</a>
 
             </form>
 
