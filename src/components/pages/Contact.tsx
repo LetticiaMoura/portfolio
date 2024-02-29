@@ -25,7 +25,7 @@ function Contact() {
 
     useEffect( () => {
         
-    fetch("http://localhost:5000/categories", {
+    fetch("https://letticiamoura.github.io/portfolioLM/", {
         method: 'GET',
         headers: {
             'Content-Type': 'applicate/json',
@@ -43,7 +43,7 @@ function Contact() {
     const handleSubmit = (e: any) => {
         e.preventDefault()
         
-        fetch("http://localhost:5000/contactMe", {
+        fetch("https://letticiamoura.github.io/portfolioLM/", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
