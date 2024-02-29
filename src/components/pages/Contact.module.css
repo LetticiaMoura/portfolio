@@ -36,6 +36,15 @@
     color: #FFF;
 }
 
+
+.container select {
+    width: 25vw;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+
 .container input {
     width: 25vw;
     padding: 8px;
