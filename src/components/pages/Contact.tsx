@@ -28,7 +28,7 @@ function Contact() {
     fetch("https://letticiamoura.github.io/api-portfolio/api-categories.json", {
         method: 'GET',
         headers: {
-            'Content-Type': 'applicate/json',
+            'Content-Type': 'application/json',
         },
     })
     .then( (resp) => resp.json() )
