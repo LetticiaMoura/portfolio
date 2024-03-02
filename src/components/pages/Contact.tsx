@@ -5,7 +5,7 @@ import Select from '../form/Select';
 import Input from '../form/Input';
 import TextArea from '../form/TextArea';
 
-import Styles from './Contact.module.css';
+//import Styles from './Contact.module.css';
 
 function Contact() {
 
@@ -43,7 +43,7 @@ function Contact() {
     const handleSubmit = (e: any) => {
         e.preventDefault()
         
-        fetch("https://letticiamoura.github.io/api-portfolio", {
+        fetch("http://localhost:5000/contactMe", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -68,11 +68,11 @@ function Contact() {
 
     return(
 
-        <div className={Styles.container}>
+        <div className="flex flex-wrap items-center font-gfs-didot  p-10 justify-around bg-gray h-[120vh]">
 
-            <h1> <span> contact me </span> <br></br> by sending a message </h1>
+            <h1 className="p-5 items-center text-center uppercase text-pessego"> <span className="text-2xl text-orange "> contact me </span> <br></br> by sending a message </h1>
 
-            <form>
+            <form className="flex flex-wrap flex-col">
 
                 <Input 
                     text="Name"
@@ -103,14 +103,12 @@ function Contact() {
                 <TextArea
                     text='Description'
                     name='description' 
-                    rows={10}
-                    cols={38}
                     placeholder='Write you message...'
                     value={dataContact.description}
                     onChange={handleChange}
                 />
             
-                <a type='submit' href='/contact' onClick={handleSubmit}>Enter</a>
+                <a className="w-[30vw] sm:w-[25vw] sm:ml-24 sm:p-3 ml-28 md:w-[20vw] md:ml-20 md:p-4 lg:w-[10vw] lg:p-2 lg:ml-32 border-none p-2 text-slate-white bg-slate-blue rounded-2xl text-center items-center hover:opacity-45" type='submit' href='/contact' onClick={handleSubmit}>Enter</a>
 
             </form>
 

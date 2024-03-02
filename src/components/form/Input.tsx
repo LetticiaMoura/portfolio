@@ -10,20 +10,13 @@ type inputs = {
 }
 
 const Input = ( { text, type, placeholder, name, value, onChange }:inputs ) => {
-/*
-  console.log("text " + text)
-  console.log("type " + type)
-  console.log("placeholder " + placeholder)
-  console.log("name " + name)
-  console.log("value " + value)
-  console.log("onChange " + onChange)
-*/
+
   return (
 
     <div>
 
         <label htmlFor={name}> {text} </label> <br />
-        <input value={value} name={name} type={type} placeholder={placeholder} onChange={onChange}/> <br />
+        <input  className="opacity-50 w-[80vw] sm:w-[60vw] md:w-[40vw] lg:w-[30vw] text-slate-blue p-3 border-none outline-none rounded-2xl" value={value} name={name} type={type} placeholder={placeholder} onChange={onChange}/> <br />
         
 
     </div>

@@ -1,11 +1,12 @@
+/*
 .container {
-    padding: 6vh;
+    padding: 6vh; //
     height: 90vh;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #232323;
+    display: flex; //
+    flex-wrap: wrap; //
+    align-items: center; //
+    justify-content: space-around; //
+    background-color: #232323; //
 }
 
 .container h1 {
@@ -44,7 +45,6 @@
     outline: none;
     border-radius: 5px;
 }
-
 .container input {
     width: 25vw;
     padding: 8px;
@@ -60,6 +60,7 @@
     margin-bottom: 15px;
     border-radius: 5px;
 }
+
 
 .container a {
     width: 20%;
@@ -79,3 +80,4 @@
     color: #232323;
     background-color: #FFF;
 }
+*/
