@@ -16,7 +16,7 @@ const Input = ( { text, type, placeholder, name, value, onChange }:inputs ) => {
     <div>
 
         <label htmlFor={name}> {text} </label> <br />
-        <input  className="opacity-50 w-[80vw] sm:w-[60vw] md:w-[40vw] lg:w-[30vw] text-slate-blue p-3 border-none outline-none rounded-2xl" value={value} name={name} type={type} placeholder={placeholder} onChange={onChange}/> <br />
+        <input  className="opacity-50 w-[80vw] sm:w-[60vw] md:w-[40vw] lg:w-[30vw] text-slate-blue p-2 border-none outline-none rounded-2xl" value={value} name={name} type={type} placeholder={placeholder} onChange={onChange}/> <br />
         
 
     </div>
