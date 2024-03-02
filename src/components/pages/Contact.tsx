@@ -59,7 +59,7 @@ function Contact() {
 
                 <h1 className="p-5 items-center text-4xl text-center uppercase text-pessego transition-transform transform hover:scale-125"> <span className="text-3xl text-orange "> contact me </span> <br></br> by sending a message </h1>
 
-                <a href="https://wa.me/558599043834/?text=Olá, vim do seu portfolio!" target='_blank'>
+                <a href="https://wa.me/5585992043834/?text=Olá, vim do seu portfolio!" target='_blank'>
                     <img className="size-full sm:h-[50vh] md:h-[35vh] lg:h-[80vh] xl:h-[80vh] opacity-50" src={gif} alt="Contact Me" />
                 </a>
             </div>
