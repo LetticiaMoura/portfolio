@@ -6,50 +6,6 @@
       "email": "luna@gmail.com",
       "description": "Quanto tempo demorou para criar seu portfolio?\n",
       "category_name": "Dúvida"
-    },
-    {
-      "id": "21a1",
-      "name": "",
-      "email": "",
-      "description": "",
-      "options": "",
-      "category_name": "4"
-    },
-    {
-      "id": "97e1",
-      "name": "MV",
-      "email": "a@gmail.com",
-      "description": "",
-      "options": "",
-      "category_name": "2"
-    },
-    {
-      "id": "090e",
-      "name": "",
-      "email": "",
-      "description": "",
-      "options": ""
-    },
-    {
-      "id": "1947",
-      "name": "",
-      "email": "",
-      "description": "",
-      "options": ""
-    }
-  ],
-  "categories": [
-    {
-      "id": "1",
-      "name": "Interesse"
-    },
-    {
-      "id": "2",
-      "name": "Dúvida"
-    },
-    {
-      "id": "3",
-      "name": "Dica"
     }
   ]
 }
