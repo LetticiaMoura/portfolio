@@ -106,7 +106,7 @@ function Contact() {
                     onChange={handleChange}
                 />
             
-                <a className="w-[30vw] sm:w-[25vw] sm:ml-24 sm:p-3 ml-28 md:w-[20vw] md:ml-20 md:p-4 lg:w-[10vw] lg:p-2 lg:ml-32 border-none p-2 text-slate-white bg-gray rounded-2xl text-center items-center hover:opacity-75" type='submit' href='/contact' onClick={handleSubmit}>Enter</a>
+                <a className="w-[30vw] sm:w-[25vw] sm:ml-24 sm:p-3 ml-28 md:w-[20vw] md:ml-20 md:p-4 lg:w-[10vw] lg:p-2 lg:ml-32 p-2 text-slate-white border-2 border-solid bg-slate-blue border-orange rounded-xl text-center items-center hover:opacity-75" type='submit' href='/contact' onClick={handleSubmit}>Send</a>
 
             </form>
 
