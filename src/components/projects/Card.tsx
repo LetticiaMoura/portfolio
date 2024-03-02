@@ -8,7 +8,7 @@ type cards = {
 
 }; 
 
-function Card( {title, img, description, language} : cards) {
+function Card( {title, img, description, language } : cards) {
 
     return(
 
@@ -23,8 +23,6 @@ function Card( {title, img, description, language} : cards) {
                 <p className="p-1">{description}</p>
 
                 <p className="p-1">{language}</p>
-
-                <button className="p-2 text-slate-white rounded-lg bg-slate-blue"> Git hub </button>
 
             </div>
             

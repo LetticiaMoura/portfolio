@@ -15,25 +15,33 @@ function Projects() {
 
             <div className="flex justify-around gap-11 flex-wrap p-10 pb-10">
 
-            <Card 
-                title='Time Tracking App'
-                img={ponto}
-                description='Digital Time Tracking App'
-                language='React Native'
-            />
-             <Card 
-                title='Tic Tac Toe'
-                img={jogo}
-                description='Simple tic tac toe'
-                language='HTML | CSS | Javascript'
-            />
+            <a href="https://github.com/letticiamoura/ada"  target="_blank">
+                <Card 
+                    title='Time Tracking App'
+                    img={ponto}
+                    description='Digital Time Tracking App'
+                    language='React Native'
+                />
+            </a>
 
-             <Card 
-                title='Home Page Makeup'
-                img={site}
-                description='makeup showcase'
-                language='HTML | CSS'
-            />
+            <a href="https://github.com/letticiamoura/JogoDaVelha"  target="_blank">
+                <Card 
+                    title='Tic Tac Toe'
+                    img={jogo}
+                    description='Simple tic tac toe'
+                    language='HTML | CSS | Javascript'
+                />
+            </a>
+             
+
+            <a href="https://github.com/letticiamoura/Page-Makeup" target="_blank">
+                <Card 
+                    title='Home Page Makeup'
+                    img={site}
+                    description='makeup showcase'
+                    language='HTML | CSS'
+                />
+            </a>
 
             </div>
 
