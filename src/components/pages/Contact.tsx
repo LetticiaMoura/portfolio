@@ -1,18 +1,18 @@
 
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 
 import Select from '../form/Select';
 import Input from '../form/Input';
 import TextArea from '../form/TextArea';
+import Label from '../form/Label';
 
 function Contact() {
-
-    const [ categories, setCategories ] = useState([]);
 
     const [ dataContact, setDataContact ] = useState({
         name: '',
         email: '',
-        description: ''
+        description: '',
+        options: '',
     });
 
     
@@ -20,22 +20,6 @@ function Contact() {
         const { name, value } = e.target;
         setDataContact({ ...dataContact, [name]: value });
     };
-
-    useEffect( () => {
-        
-    fetch("http://localhost:5000/categories", {
-        method: 'GET',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-    })
-    .then( (resp) => resp.json() )
-    .then( (data) => {
-        setCategories(data)
-    })
-    .catch( (err) => console.log(err))
-
-    }, []);
 
 
     const handleSubmit = (e: any) => {
@@ -55,7 +39,8 @@ function Contact() {
             setDataContact({
             name: '',
             email: '',
-            description: ''
+            description: '',
+            options: ''
         })
         })
         .catch( (err) => console.log(err))
@@ -66,14 +51,18 @@ function Contact() {
 
     return(
 
-        <div className="flex flex-wrap items-center font-gfs-didot  p-10 justify-around bg-gray h-[100vh]">
+        <div className="flex flex-wrap items-center font-gfs-didot  p-10 justify-around bg-slate-blue h-[100vh]">
 
             <h1 className="p-5 items-center text-center uppercase text-pessego transition-transform transform hover:scale-125"> <span className="text-2xl text-orange "> contact me </span> <br></br> by sending a message </h1>
 
             <form className="flex flex-wrap flex-col">
 
-                <Input 
+                <Label
                     text="Name"
+                    name="name"
+                />
+
+                <Input 
                     name="name"
                     type="text"
                     placeholder="Write you name"
@@ -81,8 +70,12 @@ function Contact() {
                     onChange={handleChange}
                 />
 
+                <Label
+                    text="Email"
+                    name="email"
+                />
+
                 <Input 
-                    text="E-mail"
                     name="email"
                     type="email"
                     placeholder="Write you email"
@@ -90,23 +83,30 @@ function Contact() {
                     onChange={handleChange}
                 />
 
-                <Select
+                <Label
                     text="Category"
-                    value='Category_id'
+                    name="category"
+                />
+
+                <Select
                     name="category_name"
-                    options={categories}
+                    value="category_name"
                     onChange={handleChange}
                 />
 
+                <Label
+                    text="Description"
+                    name="description"
+                />
+
                 <TextArea
-                    text='Description'
                     name='description' 
                     placeholder='Write you message...'
                     value={dataContact.description}
                     onChange={handleChange}
                 />
             
-                <a className="w-[30vw] sm:w-[25vw] sm:ml-24 sm:p-3 ml-28 md:w-[20vw] md:ml-20 md:p-4 lg:w-[10vw] lg:p-2 lg:ml-32 border-none p-2 text-slate-white bg-slate-blue rounded-2xl text-center items-center hover:opacity-75" type='submit' href='/contact' onClick={handleSubmit}>Enter</a>
+                <a className="w-[30vw] sm:w-[25vw] sm:ml-24 sm:p-3 ml-28 md:w-[20vw] md:ml-20 md:p-4 lg:w-[10vw] lg:p-2 lg:ml-32 border-none p-2 text-slate-white bg-gray rounded-2xl text-center items-center hover:opacity-75" type='submit' href='/contact' onClick={handleSubmit}>Enter</a>
 
             </form>
 

@@ -18,6 +18,7 @@ export default {
       'slate-gray': '#0f172a',
       'slate-white': '#f1f5f9',
       'gray': '#232323',
+      'gray-white': '#e5e7eb',
       },
   },
   plugins: [],
