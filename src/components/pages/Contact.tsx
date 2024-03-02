@@ -6,6 +6,8 @@ import Input from '../form/Input';
 import TextArea from '../form/TextArea';
 import Label from '../form/Label';
 
+import gif from '../../assets/contact-us-animate.svg';
+
 function Contact() {
 
     const [ dataContact, setDataContact ] = useState({
@@ -51,9 +53,16 @@ function Contact() {
 
     return(
 
-        <div className="flex flex-wrap items-center font-gfs-didot  p-10 justify-around bg-slate-blue h-[100vh]">
+        <div className="flex flex-wrap items-center font-gfs-didot p-10 justify-around bg-slate-blue h-auto">
 
-            <h1 className="p-5 items-center text-center uppercase text-pessego transition-transform transform hover:scale-125"> <span className="text-2xl text-orange "> contact me </span> <br></br> by sending a message </h1>
+            <div className="flex flex-col">
+
+                <h1 className="p-5 items-center text-4xl text-center uppercase text-pessego transition-transform transform hover:scale-125"> <span className="text-3xl text-orange "> contact me </span> <br></br> by sending a message </h1>
+
+                <a href="https://wa.me/558599043834/?text=Olá, vim do seu portfolio!" target='_blank'>
+                    <img className="size-full sm:h-[50vh] md:h-[35vh] lg:h-[80vh] xl:h-[80vh] opacity-50" src={gif} alt="Contact Me" />
+                </a>
+            </div>
 
             <form className="flex flex-wrap flex-col">
 
