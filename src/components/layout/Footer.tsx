@@ -10,18 +10,18 @@ function Footer() {
             <ul className="flex  justify-center list-none">
 
                 <li>
-                    <a className="text-slate-white text-3xl hover:text-orange mr-16 text-center" href='https://github.com/LetticiaMoura'> <FaGithub /> </a>
+                    <a className="text-slate-white text-3xl hover:text-orange mr-16 text-center" href='https://github.com/LetticiaMoura' target="_blank"> <FaGithub /> </a>
                 </li>
 
                 <li>
                     
-                    <a className="text-slate-white text-3xl hover:text-orange mr-16 text-center" href='https://www.linkedin.com/in/leticia-moura-2157891a6'> <FaLinkedin /> </a>
+                    <a className="text-slate-white text-3xl hover:text-orange mr-16 text-center" href='https://www.linkedin.com/in/leticia-moura-2157891a6' target="_blank"> <FaLinkedin /> </a>
 
                 </li>
 
                 <li>
 
-                    <a className="text-slate-white text-3xl hover:text-orange mr-12 text-center" href='https://www.instagram.com/leticiamourah_?igsh=aGpoZHkzYWx2cDRy'> <FaInstagram /> </a>
+                    <a className="text-slate-white text-3xl hover:text-orange mr-12 text-center" href='https://www.instagram.com/leticiamourah_?igsh=aGpoZHkzYWx2cDRy' target="_blank"> <FaInstagram /> </a>
 
                 </li>
                 

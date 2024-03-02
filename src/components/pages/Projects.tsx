@@ -11,7 +11,7 @@ function Projects() {
 
         <div className="h-auto bg-pessego font-gfs-didot p-10">
 
-            <h1 className="text-3xl text-center bg-slate-blue text-pessego h-12 p-2"> PROJECTS</h1>
+            <h1 className="text-3xl text-center bg-slate-blue text-pessego h-15 p-3 rounded-full"> PROJECTS</h1>
 
             <div className="flex justify-around gap-11 flex-wrap p-10 pb-10">
 
