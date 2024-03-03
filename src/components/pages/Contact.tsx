@@ -26,35 +26,19 @@ function Contact() {
 
 
     const handleSubmit = (e: any) => {
+        
         e.preventDefault()
         
-        fetch("http://localhost:5000/contactMe", {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(dataContact)
-        })
-        .then( (resp) => resp.json() )
-        .then( (data) => {
-            setDataContact(data)
-            
-            setDataContact({
+        const url = `https://wa.me/5585992043834?text=${encodeURIComponent(message)}`;   
+
+        window.location.href = url;
+        
+        setDataContact({
             name: '',
             email: '',
             description: '',
             options: ''
         })
-        })
-        .catch( (err) => console.log(err))
-
-        alert("Mensagem Enviada!")
-
-        
-    const url = `https://wa.me/5585992043834?text=${encodeURIComponent(message)}`;
-
-    window.location.href = url;
-
     };
 
     return(
@@ -79,7 +63,7 @@ function Contact() {
                 <Input 
                     name="name"
                     type="text"
-                    placeholder="Write you name"
+                    placeholder="Write your name"
                     value={dataContact.name}
                     onChange={handleChange}
                 />
@@ -92,7 +76,7 @@ function Contact() {
                 <Input 
                     name="email"
                     type="email"
-                    placeholder="Write you email"
+                    placeholder="Write your email"
                     value={dataContact.email}
                     onChange={handleChange}
                 />
@@ -115,7 +99,7 @@ function Contact() {
 
                 <TextArea
                     name='description' 
-                    placeholder='Write you message...'
+                    placeholder='Write your message...'
                     value={dataContact.description}
                     onChange={handleChange}
                 />
@@ -124,7 +108,7 @@ function Contact() {
                 type='submit' 
                 href="/contact"
                 onClick={handleSubmit}
-                className="w-[30vw] sm:w-[25vw] sm:ml-24 sm:p-3 ml-28 md:w-[20vw] md:ml-20 md:p-4 lg:w-[10vw] lg:p-2 lg:ml-32 p-2 text-orange border-2 border-solid bg-slate-blue border-orange rounded-xl text-center items-center hover:bg-gray/25" 
+                className="w-[30vw] sm:w-[25vw] sm:ml-24 sm:p-3 ml-24 md:w-[20vw] md:ml-20 md:p-4 lg:w-[10vw] lg:p-2 lg:ml-32 p-2 text-orange border-2 border-solid bg-slate-blue border-orange rounded-xl text-center items-center hover:bg-gray/25" 
                 >
                 Send
                 </a>
