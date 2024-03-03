@@ -17,7 +17,7 @@ function Contact() {
         options: '',
     });
 
-    const message = `Nome: ${dataContact.name} \n Email: ${dataContact.email} \n Categoria: ${dataContact.options} \n Descrição: ${dataContact.description}`
+    const message = `*Nome:* ${dataContact.name} \n*Email:* ${dataContact.email} \n*Categoria:* ${dataContact.options} \n*Descrição:* ${dataContact.description}`
     
     const handleChange = (e:any) => {
         const { name, value } = e.target;
@@ -88,7 +88,7 @@ function Contact() {
 
                 <Select
                     name="category_name"
-                    value="category_name"
+                    value={dataContact.options}
                     onChange={handleChange}
                 />
 
