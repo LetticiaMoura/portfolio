@@ -21,13 +21,13 @@ function Footer() {
 
                 <li>
 
-                    <a className="text-slate-white text-3xl hover:text-orange mr-12 text-center" href='https://www.instagram.com/leticiamourah_?igsh=aGpoZHkzYWx2cDRy' target="_blank"> <FaInstagram /> </a>
+                    <a className="text-slate-white text-3xl hover:text-orange mr-12  text-center" href='https://www.instagram.com/leticiamourah_?igsh=aGpoZHkzYWx2cDRy' target="_blank"> <FaInstagram /> </a>
 
                 </li>
                 
             </ul>
 
-            <p className="mt-2 text-2xl"> <span className="font-weight"> Leticia Moura </span> <span className=" text-orange"> &copy; </span>2024</p>
+            <p className="mt-2 text-2xl font-bold"> <span className="font-weight font-bold text-slate-white"> Leticia Moura </span> <span className="font-bold text-orange"> &copy; </span>2024</p>
 
         </footer>
             
