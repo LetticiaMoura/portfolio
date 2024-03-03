@@ -17,6 +17,7 @@ function Contact() {
         options: '',
     });
 
+    const message = `Nome: ${dataContact.name} \n Email: ${dataContact.email} \n Categoria: ${dataContact.options} \n Descrição: ${dataContact.description}`
     
     const handleChange = (e:any) => {
         const { name, value } = e.target;
@@ -48,6 +49,11 @@ function Contact() {
         .catch( (err) => console.log(err))
 
         alert("Mensagem Enviada!")
+
+        
+    const url = `https://wa.me/5585992043834?text=${encodeURIComponent(message)}`;
+
+    window.location.href = url;
 
     };
 
@@ -114,7 +120,14 @@ function Contact() {
                     onChange={handleChange}
                 />
             
-                <a className="w-[30vw] sm:w-[25vw] sm:ml-24 sm:p-3 ml-28 md:w-[20vw] md:ml-20 md:p-4 lg:w-[10vw] lg:p-2 lg:ml-32 p-2 text-orange border-2 border-solid bg-slate-blue border-orange rounded-xl text-center items-center hover:bg-gray/25" type='submit' href='/contact' onClick={handleSubmit}>Send</a>
+                <a 
+                type='submit' 
+                href="/contact"
+                onClick={handleSubmit}
+                className="w-[30vw] sm:w-[25vw] sm:ml-24 sm:p-3 ml-28 md:w-[20vw] md:ml-20 md:p-4 lg:w-[10vw] lg:p-2 lg:ml-32 p-2 text-orange border-2 border-solid bg-slate-blue border-orange rounded-xl text-center items-center hover:bg-gray/25" 
+                >
+                Send
+                </a>
 
             </form>
 
