@@ -25,11 +25,11 @@ function Projects() {
                         />
                     </a>
 
-                    <a className="p-3 mt-8 ml-10 w-[70%] transition duration-100 ease-out animate-spin text-xl hover:bg-slate-blue/45 text-slate-blue font-bold text-center border-4 border-slate-blue block sm:hidden md:hidden lg:hidden xl:hidden">View</a>
+                    <a className="p-3 mt-8 ml-10 w-[70%] transition duration-100 ease-out animate-spin text-xl hover:bg-slate-blue/45 text-slate-blue font-bold text-center border-4 border-slate-blue block md:hidden lg:hidden xl:hidden">View</a>
 
                 </div>
 
-                <div className="hidden sm:block md:block lg:block xl:block">
+                <div className="hidden md:block lg:block xl:block">
                     <a href="https://github.com/letticiamoura/JogoDaVelha"  target="_blank">
                         <Card 
                             title='Tic Tac Toe'
@@ -40,7 +40,7 @@ function Projects() {
                     </a>
                 </div>
 
-                <div className="hidden sm:block md:block lg:block xl:block">
+                <div className="hidden md:block lg:block xl:block">
                     <a href="https://github.com/letticiamoura/Page-Makeup" target="_blank">
                         <Card 
                             title='Home Page Makeup'
