@@ -57,11 +57,10 @@ function Contact() {
 
             <div className="flex flex-col">
 
-                <h1 className="p-5 items-center text-4xl text-center uppercase text-pessego transition-transform transform hover:scale-125"> <span className="text-3xl text-orange "> contact me </span> <br></br> by sending a message </h1>
+                <h1 className="p-5 items-center font-gfs-didot text-4xl text-center uppercase text-pessego transition-transform transform hover:scale-125"> <span className="text-3xl text-orange "> contact me </span> <br></br> by sending a message </h1>
 
-                <a href="https://wa.me/5585992043834/?text=Olá, vim do seu portfolio!" target='_blank'>
-                    <img className="size-full sm:h-[50vh] md:h-[35vh] lg:h-[80vh] xl:h-[80vh] opacity-50" src={gif} alt="Contact Me" />
-                </a>
+                <img className="size-full sm:h-[50vh] md:h-[35vh] lg:h-[80vh] xl:h-[80vh]" src={gif} alt="Contact Me" />
+
             </div>
 
             <form className="flex flex-wrap flex-col">
@@ -115,7 +114,7 @@ function Contact() {
                     onChange={handleChange}
                 />
             
-                <a className="w-[30vw] sm:w-[25vw] sm:ml-24 sm:p-3 ml-28 md:w-[20vw] md:ml-20 md:p-4 lg:w-[10vw] lg:p-2 lg:ml-32 p-2 text-slate-white border-2 border-solid bg-slate-blue border-orange rounded-xl text-center items-center hover:opacity-75" type='submit' href='/contact' onClick={handleSubmit}>Send</a>
+                <a className="w-[30vw] sm:w-[25vw] sm:ml-24 sm:p-3 ml-28 md:w-[20vw] md:ml-20 md:p-4 lg:w-[10vw] lg:p-2 lg:ml-32 p-2 text-orange border-2 border-solid bg-slate-blue border-orange rounded-xl text-center items-center hover:bg-gray/25" type='submit' href='/contact' onClick={handleSubmit}>Send</a>
 
             </form>
 
