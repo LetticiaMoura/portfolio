@@ -19,7 +19,11 @@ function Home() {
                 
             </div>
 
+            <div className="h-[45vh] w-[80vw] border-orange border-[7px] rounded-full p-2 animate-spin absolute top-[14%] sm:h-[55vh] sm:w-[55vw] md:hidden"></div>
+            <div className="h-[47vh] w-[70vw] border-pessego border-[9px] rounded-full p-2 animate-spin absolute top-[13%] sm:h-[55vh] sm:w-[57vw] md:hidden"></div>
+
             <img className="w-auto h-[40vh] min-h-auto min-w-auto rounded-full sm:w-auto sm:h-[50vh] md:w-auto shadow-lg shadow-slate-blue/50 md:h-[50%] lg:w-auto lg:h-[70%]" src={Perfil} alt='Profile Photo'/>
+
 
         </div>
 
