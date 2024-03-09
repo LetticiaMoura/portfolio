@@ -20,6 +20,11 @@ export default {
       'gray': '#232323',
       'gray-white': '#e5e7eb',
       },
+    screens: {
+      'pq': '500px',
+      // => @media (min-width: 500px) { ... }
+      'sm': '640px',
+    },
     },
   },
   plugins: [],
