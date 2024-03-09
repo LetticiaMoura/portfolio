@@ -10,7 +10,7 @@ function App() {
 
   return (
 
-    <div className='scroll-smooth focus:scroll-auto'>
+    <div className='scroll-smooth'>
 
       <div id='HOME'>
 

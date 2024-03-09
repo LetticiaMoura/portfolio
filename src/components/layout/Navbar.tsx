@@ -31,7 +31,7 @@ function Navbar() {
 
                 {menuItems.map(menu => (
 
-                    <li className="hover:text-orange font-gfs-didot opacity-90 mr-10"> <a className="font-medium hover:underline hover:underline-offset-4 text-2xl	" href={ `#${menu.title}` } > { menu.title } </a> </li>
+                    <li key={menu.id} className="hover:text-orange font-gfs-didot opacity-90 mr-10"> <a className="font-medium hover:underline hover:underline-offset-4 text-2xl	" href={ `#${menu.title}` } > { menu.title } </a> </li>
 
                 ))}
 

@@ -7,11 +7,11 @@ function Home() {
 
     return(
 
-        <div className="flex flex-col-reverse space-y-20 md:space-y-0 md:flex-row items-center md:justify-around p-10 bg-pessego md:h-screen">
+        <div className="scroll-smooth flex flex-col-reverse space-y-20 md:space-y-0 md:flex-row items-center md:justify-around p-10 bg-pessego md:h-screen">
 
-            <div className="h-[40vh] p-8 text-center md:text-start">
+            <div className="h-[40vh] p-8 text-center md:text-start overflow-hidden">
 
-                <h1 className="py-2 text-3xl md:text-4xl font-mono text-center md:text-start font-gfs-didot">Hello, my name is <br></br> <span className="font-gfs-didot text-orange text-start text-5xl md:text-7xl font-mono">Leticia Moura </span> </h1>
+                <h1 className="py-2 text-3xl md:text-4xl font-mono text-center md:text-start font-gfs-didot">Hello, my name is<br></br> <span className="font-gfs-didot text-orange text-start text-5xl md:text-7xl font-mono">Leticia Moura</span> </h1>
 
                 <p className="text-2xl md:text-2xl md:text-start font-mono text-center lg:text-start font-gfs-didot">I'm Frontend Developer</p>
 
@@ -20,7 +20,7 @@ function Home() {
             </div>
 
             <img className=" w-auto h-[40vh] min-h-auto min-w-auto rounded-full sm:w-auto sm:h-[50vh] md:w-auto pt-1/5 shadow-lg shadow-slate-blue/50 md:h-[50%] lg:w-auto lg:h-[70%]" src={Perfil} alt='Profile Photo'/>
-
+          
         </div>
 
     )
