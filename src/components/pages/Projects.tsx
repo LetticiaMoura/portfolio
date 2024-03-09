@@ -39,7 +39,7 @@ function Projects() {
                 </div>
 
                 <div className=" md:block lg:block xl:block">
-                    <a href="https://github.com/letticiamoura/Page-Makeup" target="_blank">
+                    <a href="https://letticiamoura.github.io/Page-Makeup/" target="_blank">
                         <Card 
                             title='Home Page Makeup'
                             img={site}
