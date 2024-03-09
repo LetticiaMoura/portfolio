@@ -1,7 +1,7 @@
 
 import Curriculum from '../layout/Curriculum';
 
-import Perfil from '../../assets/image.jpg';
+import Perfil from '../../assets/image.jpg'
 
 function Home() {
 
@@ -19,7 +19,7 @@ function Home() {
                 
             </div>
 
-            <img className=" w-auto h-[40vh] min-h-auto min-w-auto rounded-full sm:w-auto sm:h-[50vh] md:w-auto pt-1/5 shadow-lg shadow-slate-blue/50 md:h-[50%] lg:w-auto lg:h-[70%]" src={Perfil} alt='Profile Photo'/>
+            <img className="w-auto h-[40vh] min-h-auto min-w-auto rounded-full sm:w-auto sm:h-[50vh] md:w-auto shadow-lg shadow-slate-blue/50 md:h-[50%] lg:w-auto lg:h-[70%]" src={Perfil} alt='Profile Photo'/>
 
         </div>
 
