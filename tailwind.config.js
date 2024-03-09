@@ -5,7 +5,7 @@ export default {
     "./src/**/*.tsx",
   ],
   theme: {
-    extend: {},
+    extend: {
     fontFamily: {
       'gfs-didot': ['GFS Didot', 'serif'],
     },
@@ -20,7 +20,7 @@ export default {
       'gray': '#232323',
       'gray-white': '#e5e7eb',
       },
+    },
   },
   plugins: [],
 }
-
