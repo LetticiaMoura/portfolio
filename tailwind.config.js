@@ -21,9 +21,15 @@ export default {
       'gray-white': '#e5e7eb',
       },
     screens: {
-      'pq': '500px',
-      // => @media (min-width: 500px) { ... }
+      'pq': '440px',
+
+      'em': '500px',
+      
       'sm': '640px',
+    },
+    animation: {
+      'spin-slow': 'spin 2s linear infinite',
+      'spin-fast': 'spin 5s linear infinite',
     },
     },
   },
