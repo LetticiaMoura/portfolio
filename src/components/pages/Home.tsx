@@ -19,6 +19,30 @@ function Home() {
                 
             </div>
 
+            <div className="
+            lg:top-[33%] 
+            lg:left-[60%]
+            lg:border-[20px] 
+            lg:h-[62vh] 
+            lg:w-[32vw] 
+            absolute
+            rounded-full
+            bg-orange
+            border-orange
+            animate-spin-slow">
+            </div>
+            <div className="
+            lg:top-[33%] 
+            lg:left-[60%]
+            lg:border-[20px] 
+            lg:h-[62vh] 
+            lg:w-[32vw] 
+            absolute
+            rounded-full
+            border-pessego
+            animate-spin-fast">
+            </div>
+            
             <img className="w-auto h-[40vh] z-40 min-h-auto min-w-auto rounded-full sm:w-auto sm:h-[50vh] md:w-auto shadow-lg shadow-slate-blue/50 md:h-[50%] lg:w-auto lg:h-[70%] cursor-cat" src={Perfil} alt='Profile Photo'/>
             
             <div className="
@@ -80,12 +104,6 @@ function Home() {
                 animate-spin-fast"
             ></div>
 
-            {/**
-            <div className="h-[45vh] w-[85vw] border-yellow-400 border-[15px] sm:border-[14px] pq:top-[16%] pq:h-[40vh] pq:w-[55vw] pq:border-[15px] rounded-full p-2 animate-spin absolute top-[13%] sm:hidden sm:h-[55vh] 
-            sm:w-[55vw] md:hidden  animation-slow"></div> 
-
-            <div className="h-[45vh] w-[85vw] border-pessego border-[15px] pq:top-[14%] sm:border-[10px] filter brightness-80 pq:h-[42vh] pq:w-[45vh] pq:border-[15px] rounded-full p-2 animate-spin absolute top-[13%] sm:h-[55vh] sm:w-[57vw] md:hidden  animation-slow"></div>
-*/}
         </div>
 
     )

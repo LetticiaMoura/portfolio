@@ -18,7 +18,7 @@ function Projects() {
                 <div>
                     <a href="https://github.com/letticiamoura/ada"  target="_blank">
                         <Card 
-                            title='Time Tracking App'
+                            title='Digital time clock'
                             img={ponto}
                             description='Digital Time Tracking App'
                             language='React Native'
