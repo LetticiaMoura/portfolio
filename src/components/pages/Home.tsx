@@ -6,7 +6,7 @@ function Home() {
 
     return(
 
-        <div className="scroll-smooth flex flex-col-reverse space-y-20 h-screen md:space-y-0 md:flex-row items-center md:justify-around p-10 bg-pessego md:h-screen">
+        <div className="scroll-smooth focus:scroll-auto flex flex-col-reverse space-y-20 h-screen md:space-y-0 md:flex-row items-center md:justify-around p-10 bg-pessego md:h-screen">
 
             <div className="h-[40vh] text-center md:text-start overflow-hidden">
 
