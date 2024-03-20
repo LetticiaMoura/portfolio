@@ -17,48 +17,6 @@ function Home() {
                 <button className='p-2 mt-3 text-slate-blue font-bold rounded-md border-2 border-solid border-slate-blue hover:bg-slate-gray/30 text-center xl:ml-40'> <Curriculum /> </button>
                 
             </div>
-
-            <div className="
-            lg:top-[33%] 
-            lg:left-[60%]
-            lg:border-[20px] 
-            lg:h-[62vh] 
-            lg:w-[32vw] 
-
-            xl:top-[27%] 
-            xl:left-[57%]
-            xl:border-[30px] 
-            xl:h-[60vh] 
-            xl:w-[32vw] 
-
-            md:hidden
-            
-            absolute
-            rounded-full
-            bg-pessego
-            border-pessego
-            animate-spin-slow">
-            </div>
-            <div className="
-            lg:top-[33%] 
-            lg:left-[60%]
-            lg:border-[20px] 
-            lg:h-[62vh] 
-            lg:w-[32vw] 
-
-            xl:top-[26%] 
-            xl:left-[56.5%]
-            xl:border-[20px] 
-            xl:h-[67vh] 
-            xl:w-[33vw] 
-
-            md:hidden
-
-            absolute
-            rounded-full
-            border-orange
-            animate-spin-fast">
-            </div>
             
             <img className="w-auto h-[40vh] z-40 min-h-auto min-w-auto rounded-full sm:w-auto sm:h-[50vh] md:w-auto md:h-[55vh] shadow-lg shadow-slate-blue/50 lg:w-auto lg:h-[70%] xl:w-auto xl:h-[65%] cursor-cat" src={Perfil} alt='Profile Photo'/>
             

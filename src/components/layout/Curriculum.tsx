@@ -10,7 +10,7 @@ class Curriculum extends Component {
 
         <div>
 
-          <a href = {curriculum} target = "_blank">Curriculum</a>
+          <a href = {curriculum} target = "_blank">Download CV</a>
 
         </div>
 
