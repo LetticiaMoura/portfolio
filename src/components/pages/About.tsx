@@ -15,7 +15,7 @@ export default function About() {
 
                 <img src={my} alt="I'm" className="shadow-xl m-auto h-[40vh] w-[65vw] rounded-br-full md:rounded-l-full lg:rounded-xl object-cover sm:h-[50vh] md:h-[50vh] md:w-[50vw] lg:h-[50vh] lg:w-[20vw] lg:hidden"/>
 
-                <p className="p-5 shadow-xl text-2xl text-center font-gfs-didot text-slate-950 lg:w-[80vh] m-auto lg:p-6 lg:text-2xl">Olá, sou Letícia Moura, uma entusiasta do mundo da tecnologia com 20 anos de idade. Atualmente, estou focada em me tornar uma desenvolvedora de software especializada em front-end. Minha jornada nesse campo é impulsionada pela minha paixão pela inovação e pelos avanços tecnológicos.</p>
+                <p className="p-5 shadow-xl text-2xl text-center font-gfs-didot text-slate-950 lg:w-[80vh] m-auto lg:p-6 lg:text-2xl">Hello, I'm Letícia Moura, a 20-year-old technology enthusiast. Currently, I am focused on becoming a software developer specializing in front-end. My journey in this field is driven by my passion for innovation and technological advancements.</p>
 
 
             </div>
