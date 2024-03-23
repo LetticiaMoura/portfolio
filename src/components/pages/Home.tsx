@@ -1,4 +1,5 @@
 import Curriculum from '../layout/Curriculum';
+import { TypeAnimation } from 'react-type-animation';
 
 import Perfil from '../../assets/image.jpg'
 
@@ -10,9 +11,27 @@ function Home() {
 
             <div className="h-[40vh] text-center md:text-start overflow-hidden">
 
-                <h1 className="py-2 text-3xl xl:text-center md:text-4xl xl:text-5xl xl:text-slate-950 text-center md:text-start font-gfs-didot">Hello, my name is<br></br> <span className="font-gfs-didot text-orange text-start text-5xl md:text-7xl">Leticia Moura</span> </h1>
+                <h1 className="pt-7 py-2 text-3xl md:text-4xl xl:text-5xl xl:text-slate-950 text-center md:text-start font-gfs-didot">Hello, my name is<br></br> <span className="font-gfs-didot text-orange text-start text-5xl md:text-7xl">Leticia Moura</span> </h1>
 
-                <p className="text-2xl md:text-2xl text-slate-blue xl:text-center md:text-start font-mono text-center lg:text-start">I'm Frontend Developer</p>
+                {/*<p className="text-2xl md:text-2xl text-slate-blue xl:text-center md:text-start font-mono text-center lg:text-start">I'm Frontend Developer</p>*/}
+
+                <p>
+                    <TypeAnimation 
+                        style={{ 
+                            whiteSpace: 'pre-line', 
+                            display: 'block',
+                            fontStyle: "bold",
+                            fontSize: '1.5em',
+                            fontFamily: 'GFS Didot, serif'
+                        }}
+                        sequence={[
+                        `I'm Frontend Developer`, 
+                        1000,
+                        '',
+                        ]}
+                        repeat={Infinity}
+                    />
+                </p>
 
                 <button className='p-2 mt-3 text-slate-blue font-bold rounded-md border-2 border-solid border-slate-blue hover:bg-slate-gray/30 text-center xl:ml-40'> <Curriculum /> </button>
                 
