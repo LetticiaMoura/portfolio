@@ -17,18 +17,12 @@ function Home() {
 
                 <p>
                     <TypeAnimation 
-                        style={{ 
-                            whiteSpace: 'pre-line', 
-                            display: 'block',
-                            fontStyle: "bold",
-                            fontSize: '1.5em',
-                            fontFamily: 'GFS Didot, serif'
-                        }}
                         sequence={[
                         `I'm Frontend Developer`, 
                         1000,
                         '',
                         ]}
+                        speed={5}
                         repeat={Infinity}
                     />
                 </p>

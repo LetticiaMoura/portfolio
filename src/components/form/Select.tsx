@@ -26,7 +26,7 @@ const Select = ({ name, onChange }: selects) => {
 
         <option>Selecione uma opção: </option>
         {categories.map( (categories: any) => (
-          <option value={categories.id} key={categories.id}> {categories.value} </option>
+          <option value={categories.value} key={categories.id}> {categories.value} </option>
         ))}
       </select>
 

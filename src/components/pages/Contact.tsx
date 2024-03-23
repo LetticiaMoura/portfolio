@@ -8,37 +8,41 @@ import Label from '../form/Label';
 
 import gif from '../../assets/contact-us-animate.svg';
 
+import emailJs from "@emailjs/browser";
+
 function Contact() {
 
-    const [ dataContact, setDataContact ] = useState({
-        name: '',
-        email: '',
-        description: '',
-        options: '',
-    });
-
-    const message = `*Nome:* ${dataContact.name} \n*Email:* ${dataContact.email} \n*Categoria:* ${dataContact.options} \n*Descrição:* ${dataContact.description}`
-    
-    const handleChange = (e:any) => {
-        const { name, value } = e.target;
-        setDataContact({ ...dataContact, [name]: value });
-    };
-
+    const [ name, setName ] = useState('');
+    const [ email, setEmail ] = useState('');
+    const [ options, setOptions ] = useState('')
+    const [ message, setMessage ] = useState('');
 
     const handleSubmit = (e: any) => {
         
         e.preventDefault()
-        
-        const url = `https://wa.me/5585992043834?text=${encodeURIComponent(message)}`;   
 
-        window.location.href = url;
-        
-        setDataContact({
-            name: '',
-            email: '',
-            description: '',
-            options: ''
+        const templateParams = {
+            from_name: name,
+            message: message,
+            email: email,
+            categories: options
+        }
+
+        emailJs.send("service_6ulrbuk", "template_tqyzpsw", templateParams, "pvvrG8V9WRrvrsTVQ")
+        .then( (response) => {
+            alert("Email Enviado!!!" )
+
+            console.log(response)
+            
+            setName('')
+            setEmail('')
+            setOptions('')
+            setMessage('')
         })
+        .catch((err) => {
+            console.log("Erro ao enviar: ", err)
+        })
+        
     };
 
     return(
@@ -64,8 +68,8 @@ function Contact() {
                     name="name"
                     type="text"
                     placeholder="Write your name"
-                    value={dataContact.name}
-                    onChange={handleChange}
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
                 />
 
                 <Label
@@ -77,8 +81,8 @@ function Contact() {
                     name="email"
                     type="email"
                     placeholder="Write your email"
-                    value={dataContact.email}
-                    onChange={handleChange}
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                 />
 
                 <Label
@@ -88,8 +92,8 @@ function Contact() {
 
                 <Select
                     name="category_name"
-                    value={dataContact.options}
-                    onChange={handleChange}
+                    value={options}
+                    onChange={(e) => setOptions(e.target.value)}
                 />
 
                 <Label
@@ -100,8 +104,8 @@ function Contact() {
                 <TextArea
                     name='description' 
                     placeholder='Write your message...'
-                    value={dataContact.description}
-                    onChange={handleChange}
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
                 />
             
                 <a 
