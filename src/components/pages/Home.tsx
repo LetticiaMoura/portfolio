@@ -7,7 +7,7 @@ import Perfil from '../../assets/image.jpg'
 function Home() {
 
     const [ text ] = useTypewriter({
-        words: ["I'm Developer Frontend"],
+        words: ["I'm Frontend Developer"],
         loop: true,
         typeSpeed: 120,
         deleteSpeed: 100
@@ -31,7 +31,7 @@ function Home() {
                     </span>
                 </p>
                
-                <button className='p-2 mt-3 text-slate-blue font-bold rounded-md border-2 border-solid border-slate-blue hover:bg-slate-gray/30 text-center xl:ml-40'> <Curriculum /> </button>
+                <button className='p-2 mt-3 text-slate-blue font-bold rounded-md border-2 border-solid border-slate-blue hover:bg-slate-gray/30 text-center'> <Curriculum /> </button>
                 
             </div>
             
