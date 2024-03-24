@@ -1,9 +1,17 @@
 import Curriculum from '../layout/Curriculum';
-import { TypeAnimation } from 'react-type-animation';
+
+import { useTypewriter, Cursor } from "react-simple-typewriter"
 
 import Perfil from '../../assets/image.jpg'
 
 function Home() {
+
+    const [ text ] = useTypewriter({
+        words: ["I'm Developer Frontend"],
+        loop: true,
+        typeSpeed: 120,
+        deleteSpeed: 100
+    });
 
     return(
 
@@ -13,21 +21,16 @@ function Home() {
 
                 <h1 className="pt-7 py-2 text-3xl md:text-4xl xl:text-5xl xl:text-slate-950 text-center md:text-start font-gfs-didot">Hello, my name is<br></br> <span className="font-gfs-didot text-orange text-start text-5xl md:text-7xl">Leticia Moura</span> </h1>
 
-                {/*<p className="text-2xl md:text-2xl text-slate-blue xl:text-center md:text-start font-mono text-center lg:text-start">I'm Frontend Developer</p>*/}
-
-                <p className='text-xl'>
-                    <TypeAnimation 
-                        style={{overflowX: "hidden"}}
-                        sequence={[
-                        `I'm Frontend Developer`, 
-                        1000,
-                        '',
-                        ]}
-                        speed={5}
-                        repeat={Infinity}
-                    />
+                <p className='text-xl font-medium text-slate-950 font-gfs-didot'>
+                    <span>
+                        {" "} 
+                        {text} 
+                    </span>
+                    <span className="font-bold">
+                        <Cursor cursorColor='#020617' />
+                    </span>
                 </p>
-
+               
                 <button className='p-2 mt-3 text-slate-blue font-bold rounded-md border-2 border-solid border-slate-blue hover:bg-slate-gray/30 text-center xl:ml-40'> <Curriculum /> </button>
                 
             </div>
