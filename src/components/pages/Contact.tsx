@@ -10,12 +10,17 @@ import gif from '../../assets/contact-us-animate.svg';
 
 import emailJs from "@emailjs/browser";
 
+import Alert from '@mui/material/Alert';
+
 function Contact() {
 
     const [ name, setName ] = useState('');
     const [ email, setEmail ] = useState('');
     const [ options, setOptions ] = useState('')
     const [ message, setMessage ] = useState('');
+
+    const [ showSucessAlert, setShowSucessAlert ] = useState(false);
+    const [ showErrAlert, setShowErrAlert ] = useState(false);
 
     const handleSubmit = (e: any) => {
         
@@ -30,7 +35,8 @@ function Contact() {
 
         emailJs.send("service_6ulrbuk", "template_tqyzpsw", templateParams, "pvvrG8V9WRrvrsTVQ")
         .then( (response) => {
-            alert("Email Enviado!!!" )
+
+            setShowSucessAlert(true);
 
             console.log(response)
             
@@ -40,6 +46,8 @@ function Contact() {
             setMessage('')
         })
         .catch((err) => {
+            setShowErrAlert(true);
+            <Alert severity="error">Erro ao enviar, tente novamente!</Alert>
             console.log("Erro ao enviar: ", err)
         })
         
@@ -118,6 +126,14 @@ function Contact() {
                 </a>
 
             </form>
+
+            {showSucessAlert && (
+                <Alert severity="success" onClose={() => setShowSucessAlert(false)} className='lg:z-50'> Email Enviado!!!</Alert>
+            )}
+            {showErrAlert && (
+                <Alert severity="error" onClose={() => setShowErrAlert(false)}>Erro ao enviar, tente novamente!</Alert>
+            )}
+
 
         </div>
 

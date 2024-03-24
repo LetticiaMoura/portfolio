@@ -15,8 +15,9 @@ function Home() {
 
                 {/*<p className="text-2xl md:text-2xl text-slate-blue xl:text-center md:text-start font-mono text-center lg:text-start">I'm Frontend Developer</p>*/}
 
-                <p>
+                <p className='text-xl'>
                     <TypeAnimation 
+                        style={{overflowX: "hidden"}}
                         sequence={[
                         `I'm Frontend Developer`, 
                         1000,
