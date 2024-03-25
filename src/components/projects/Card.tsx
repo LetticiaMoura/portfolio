@@ -5,10 +5,10 @@ type cards = {
     img: string,
     description: string,
     language: string,
-
+    onClick: () => void
 }; 
 
-function Card( {title, img, description, language } : cards) {
+function Card( {title, img, description, language, onClick } : cards) {
 
     return(
 
@@ -19,13 +19,13 @@ function Card( {title, img, description, language } : cards) {
                         md:w-[40vw]
                         md:flex
                         lg:w-[23vw]
-                        lg:h-[60vh]
+                        lg:h-auto
                         lg:flex 
                         xl:flex
                         2xl:flex
                         justify-araund 
                         flex-wrap 
-                        rounded-[15%] 
+                        rounded-[20px] 
                         font-gfs-didot 
                         text-center 
                         bg-zinc-100
@@ -33,13 +33,15 @@ function Card( {title, img, description, language } : cards) {
 
             <div className="h-auto w-[50vw] sm:w-[30vw] md:w-[40vw]">
 
-                <img className="h-[20vh] w-[60vw] sm:w-[40vw] md:h-[42vh] lg:h-[43.5vh] rounded-t-[12%] filter hover:brightness-50 brightness-85 bg-cover" src={img} alt='Photo Projects' />
+                <img className="h-[20vh] object-cover w-[60vw] sm:w-[40vw] md:h-[42vh] lg:h-[40vh] rounded-t-[20px] filter hover:brightness-50 brightness-85 bg-cover" src={img} alt='Photo Projects' />
 
-                <h3 className="pt-2 text-2xl"><strong>{title}</strong></h3>
+                <h3 className="pt-1 text-2xl"><strong>{title}</strong></h3>
 
                 <p className="p-1 hidden md:block">{description}</p>
                 
-                <p className="pb-5 w-42">{language}</p>
+                <p className="pb-2 w-42">{language}</p>
+
+                <button onClick={onClick} className="border p-2 rounded-lg hover:bg-slate-500/50 mb-5">Vizualizar</button>
 
             </div>
             
