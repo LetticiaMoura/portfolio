@@ -21,6 +21,7 @@ function Home() {
 
                 <h1 className="pt-7 py-2 text-3xl md:text-4xl xl:text-5xl xl:text-slate-950 text-center md:text-start font-gfs-didot">Hello, my name is<br></br> <span className="font-gfs-didot text-orange text-start text-5xl md:text-7xl">Leticia Moura</span> </h1>
 
+
                 <p className='text-xl font-medium text-slate-950 font-gfs-didot'>
                     <span>
                         {" "} 
@@ -35,31 +36,31 @@ function Home() {
                 
             </div>
             
-            <img className="w-auto h-[40vh] z-40 min-h-auto min-w-auto rounded-full sm:w-auto sm:h-[50vh] md:w-auto md:h-[55vh] shadow-lg shadow-slate-blue/50 lg:w-auto lg:h-[70%] xl:w-auto xl:h-[65%] cursor-cat" src={Perfil} alt='Profile Photo'/>
+            <img className="w-auto h-[38vh] z-40 min-h-auto min-w-auto rounded-full sm:w-auto sm:h-[50vh] md:w-auto md:h-[55vh] shadow-lg shadow-slate-blue/50 lg:w-auto lg:h-[70%] xl:w-auto xl:h-[65%] cursor-cat" src={Perfil} alt='Profile Photo'/>
             
             <div className="
-                h-[44vh] 
-                w-[85vw]  
+                h-[40vh] 
+                w-[80vw]  
                 rounded-full
                 absolute 
-                top-[14%] 
+                top-[16%] 
                 border-orange 
                 border-[22px]  
 
-                pq:top-[14%] 
-                pq:h-[45vh] 
-                pq:w-[73vw] 
+                pq:top-[16%] 
+                pq:h-[40vh] 
+                pq:w-[70vw] 
                 pq:border-[20px]
 
-                em:top-[15%] 
-                em:h-[42vh] 
-                em:w-[66vw] 
+                em:top-[16%] 
+                em:h-[40vh] 
+                em:w-[60vw] 
                 em:border-[15px]
 
                 sm:top-[15%] 
-                sm:border-[25px] 
+                sm:border-[15px] 
                 sm:h-[53vh] 
-                sm:w-[65vw] 
+                sm:w-[60vw] 
 
                 md:hidden
 
@@ -73,28 +74,33 @@ function Home() {
                 >
             </div>
 
-            <div 
-                className="
-                h-[47vh] 
-                w-[91vw]  
+            <div className="
+                h-[44vh] 
+                w-[79vw]  
                 rounded-full 
                 absolute 
-                top-[12%] 
-                border-pessego 
-                border-[15px]  
+                top-[14%] 
+                border-pessego
+                border-[8px]  
 
-                pq:top-[16%] 
-                pq:h-[35vh] 
-                pq:w-[20vw] 
-                pq:border-[15px]
+                pq:top-[15%] 
+                pq:h-[42vh] 
+                pq:w-[70vw] 
+                pq:border-[5px]
 
-                sm:border-[20px] 
-                sm:h-[52vh] 
-                sm:w-[55vw] 
+                em:top-[15%] 
+                em:border-[5px] 
+                em:h-[42vh] 
+                em:w-[60vw] 
+
+                sm:top-[14.5%] 
+                sm:border-[5px] 
+                sm:h-[54vh] 
+                sm:w-[63vw] 
 
                 md:hidden 
                 animate-spin-fast"
-            ></div>
+            ></div>        
 
         </div>
 

@@ -57,7 +57,7 @@ function Projects() {
                     open={openNote}
                     onClose={handleCloseNote} 
                 >
-                    <iframe src="https://letticiamoura.github.io/NotesLM/" className='m-auto h-[100vh] w-[80vw] object-cover rounded-xl' onClick={handleCloseNote}></iframe>
+                    <iframe src="https://letticiamoura.github.io/NotesLM/" className='pt-10 m-auto h-[95vh] w-[85vw] object-cover rounded-2xl' onClick={handleCloseNote}></iframe>
                 </Modal>
                 
             </div>      
@@ -76,7 +76,7 @@ function Projects() {
                     open={openClinica}
                     onClose={handleCloseClinica}
                 >
-                    <iframe src="https://letticiamoura.github.io/clinica/" className='m-auto w-[80vw] object-cover rounded-xl' onClick={handleClose}></iframe>
+                    <iframe src="https://letticiamoura.github.io/clinica/" className='pt-10 m-auto h-[95vh] w-[85vw] object-cover rounded-2xl'  onClick={handleClose}></iframe>
                 </Modal>
                 
             </div>
@@ -96,7 +96,7 @@ function Projects() {
                     open={openSecret}
                     onClose={handleCloseSecret} 
                 >
-                    <iframe src="https://letticiamoura.github.io/secretWord/" className='m-auto h-[100vh] w-[80vw] object-cover rounded-xl' onClick={handleClose}></iframe>
+                    <iframe src="https://letticiamoura.github.io/secretWord/" className='pt-10 m-auto h-[95vh] w-[85vw] object-cover rounded-2xl' onClick={handleClose}></iframe>
                 </Modal>
                 
             </div>
@@ -115,7 +115,7 @@ function Projects() {
                     open={openJogo}
                     onClose={handleCloseJogo} 
                 >
-                    <iframe src="https://github.com/letticiamoura/JogoDaVelha" className='m-auto h-[100vh] w-[80vw] object-cover rounded-xl' onClick={handleCloseJogo}></iframe>
+                <iframe src="https://github.com/letticiamoura/JogoDaVelha" className='pt-10 m-auto h-[95vh] w-[85vw] object-cover rounded-2xl' onClick={handleCloseJogo}></iframe>
                 </Modal>
                 
             </div>
@@ -135,7 +135,7 @@ function Projects() {
                     open={open}
                     onClose={handleClose} 
                 >
-                    <iframe src="https://letticiamoura.github.io/Page-Makeup/" className='m-auto h-[100vh] w-[80vw] object-cover rounded-xl' onClick={handleClose}></iframe>
+                <iframe src="https://letticiamoura.github.io/Page-Makeup/" className='pt-10 m-auto h-[95vh] w-[85vw] object-cover rounded-2xl' onClick={handleClose}></iframe>
                 </Modal>
                 
             </div>

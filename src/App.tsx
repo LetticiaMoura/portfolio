@@ -9,7 +9,7 @@ import Skills from './components/pages/Skills';
 import Projects from './components/pages/Projects';
 import Contact from './components/pages/Contact';
 import Footer from './components/layout/Footer';
-import About from './components/pages/About';
+//import About from './components/pages/About';
 
 function App() {
 
