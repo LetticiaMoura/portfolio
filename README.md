@@ -14,5 +14,3 @@
 * ``Tailwind css``
   
 <br>
-
-[![Netlify Status](https://api.netlify.com/api/v1/badges/401d1d22-e8cc-47cd-aaa8-5a1c089526c4/deploy-status)](https://app.netlify.com/sites/leticiammoura/deploys)
