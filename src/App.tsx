@@ -27,11 +27,11 @@ function App() {
 
       </div>
 
-      <div id='ABOUT' className='md:hidden'> 
+      {/*<div id='ABOUT' className='md:hidden'> 
       
         <About />
 
-      </div>
+      </div>*/}
 
       <div id='SKILLS'>
       
