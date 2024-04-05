@@ -2,6 +2,8 @@ import  { Component } from 'react';
 
 import curriculum from '../../assets/curriculoLM.pdf';
 
+import FileDownloadIcon from '@mui/icons-material/FileDownload';
+
 class Curriculum extends Component {
 
   render() {
@@ -10,7 +12,7 @@ class Curriculum extends Component {
 
         <div>
 
-          <a href = {curriculum} target = "_blank">Download CV</a>
+          <a href = {curriculum} target = "_blank"><FileDownloadIcon /> Download CV </a>
 
         </div>
 

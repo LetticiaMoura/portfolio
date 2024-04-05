@@ -41,7 +41,7 @@ function Projects() {
 
             {/*<h1 className="text-4xl text-center bg-slate-blue text-pessego h-15 p-3 rounded-md">Projects</h1>
             */}
-            <div className="flex justify-around gap-11 p-10 pb-10 overflow-x-scroll scroll-smooth  scrollbar-thin scrollbar-thumb-pessego scrollbar-track-pessego">
+            <div className="flex justify-around gap-11 p-10 pb-10 overflow-x-scroll scroll-smooth  scrollbar-thin scrollbar-thumb-gray/50 scrollbar-track-pessego">
 
             <div className="flex-shrink-0 md:block lg:block xl:block cursor-pointer" >
                     

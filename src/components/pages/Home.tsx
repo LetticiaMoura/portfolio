@@ -1,6 +1,8 @@
 import Curriculum from '../layout/Curriculum';
 
-import { useTypewriter, Cursor } from "react-simple-typewriter"
+import GitHubIcon from '@mui/icons-material/GitHub';
+
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 import Perfil from '../../assets/image.jpg'
 
@@ -31,21 +33,24 @@ function Home() {
                         <Cursor cursorColor='#020617' />
                     </span>
                 </p>
-               
-                <button className='p-2 mt-3 text-slate-blue font-bold rounded-md border-2 border-solid border-slate-blue hover:bg-slate-gray/30 text-center'> <Curriculum /> </button>
-                
+
+                <div className='flex gap-5'>
+                    <button className='p-2 mt-3 w-42 text-slate-blue font-bold rounded-md border-2 border-solid border-slate-blue hover:bg-slate-gray/30 text-center'> <Curriculum /> </button>
+                    <a href="https://github.com/letticiamoura" className='p-2 mt-3 w-40 text-slate-blue font-bold rounded-md border-2 border-solid border-slate-blue hover:bg-slate-gray/30 text-center'><GitHubIcon sx={{ marginRight: '0.5rem' }} />GitHub</a>
+                </div>
+                            
             </div>
             
             <img className="w-auto h-[38vh] z-40 min-h-auto min-w-auto rounded-full sm:w-auto sm:h-[50vh] md:w-auto md:h-[55vh] shadow-lg shadow-slate-blue/50 lg:w-auto lg:h-[70%] xl:w-auto xl:h-[65%] cursor-cat" src={Perfil} alt='Profile Photo'/>
             
             <div className="
-                h-[40vh] 
-                w-[80vw]  
+                h-[38vh] 
+                w-[75vw]  
                 rounded-full
                 absolute 
-                top-[16%] 
+                top-[17%] 
                 border-orange 
-                border-[22px]  
+                border-[25px]  
 
                 pq:top-[16%] 
                 pq:h-[40vh] 
@@ -75,6 +80,7 @@ function Home() {
             </div>
 
             <div className="
+                hidden
                 h-[44vh] 
                 w-[79vw]  
                 rounded-full 
