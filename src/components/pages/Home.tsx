@@ -41,16 +41,16 @@ function Home() {
                             
             </div>
             
-            <img className="h- [38vh] w-[70vw] object-cover rounded-full z-40 border-[8px] border-pessego/50 pq:h-[40vh] pq:w-[65vw] em:h-[50vh] em:w-[60vw] md:h-[50vh] md:w-auto lg:h-[55vh] lg:w-[40vw] xl:h-[62vh] xl:w-auto 2xl:h-[70vh] 2xl:w-[37vw]" src={Perfil} alt='Profile Photo'/>
+            <img className="h-[38vh] w-[70vw] object-cover rounded-full z-40 border-[8px] border-pessego/50 pq:h-[40vh] pq:w-[65vw] em:h-[50vh] em:w-auto md:h-[50vh] md:w-auto lg:h-[55vh] lg:w-[40vw] xl:h-[62vh] xl:w-auto 2xl:h-[70vh] 2xl:w-[37vw]" src={Perfil} alt='Profile Photo'/>
             
             <div className="
-                h-[38vh] 
+                h-[40vh] 
                 w-[75vw]  
                 rounded-full
                 absolute 
-                top-[17%] 
+                top-[16%] 
                 border-orange 
-                border-[25px]  
+                border-[20px]  
 
                 pq:top-[16%] 
                 pq:h-[40vh] 
@@ -58,14 +58,14 @@ function Home() {
                 pq:border-[20px]
 
                 em:top-[15%] 
-                em:h-[43vh] 
-                em:w-[62vw] 
-                em:border-[20px]
+                em:h-[51vh] 
+                em:w-[70vw] 
+                em:border-[15px]
 
                 sm:top-[15%] 
-                sm:border-[15px] 
-                sm:h-[53vh] 
-                sm:w-[60vw] 
+                sm:border-[30px] 
+                sm:h-[57vh] 
+                sm:w-[57vw] 
 
                 md:hidden
 
