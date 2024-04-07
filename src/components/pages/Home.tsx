@@ -4,7 +4,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
-import Perfil from '../../assets/image.jpg'
+import Perfil from '../../assets/my.jpeg'
 
 function Home() {
 
@@ -36,12 +36,12 @@ function Home() {
 
                 <div className='flex gap-5'>
                     <button className='p-2 mt-3 w-42 text-slate-blue font-bold rounded-md border-2 border-solid border-slate-blue hover:bg-slate-gray/30 text-center'> <Curriculum /> </button>
-                    <a href="https://github.com/letticiamoura" className='p-2 mt-3 w-40 text-slate-blue font-bold rounded-md border-2 border-solid border-slate-blue hover:bg-slate-gray/30 text-center'><GitHubIcon sx={{ marginRight: '0.5rem' }} />GitHub</a>
+                    <a href="https://github.com/letticiamoura" className='p-2 mt-3 w-40 text-slate-blue font-bold rounded-md border-2 border-solid border-slate-blue hover:bg-slate cc-gray/30 text-center'><GitHubIcon sx={{ marginRight: '0.5rem' }} />GitHub</a>
                 </div>
                             
             </div>
             
-            <img className="w-auto h-[38vh] z-40 min-h-auto min-w-auto rounded-full sm:w-auto sm:h-[50vh] md:w-auto md:h-[55vh] shadow-lg shadow-slate-blue/50 lg:w-auto lg:h-[70%] xl:w-auto xl:h-[65%] cursor-cat" src={Perfil} alt='Profile Photo'/>
+            <img className="h- [38vh] w-[70vw] object-cover rounded-full z-40 border-[8px] border-pessego/50 pq:h-[40vh] pq:w-[65vw] em:h-[50vh] em:w-[60vw] md:h-[50vh] md:w-auto lg:h-[55vh] lg:w-[40vw] xl:h-[62vh] xl:w-auto 2xl:h-[70vh] 2xl:w-[37vw]" src={Perfil} alt='Profile Photo'/>
             
             <div className="
                 h-[38vh] 
@@ -57,10 +57,10 @@ function Home() {
                 pq:w-[70vw] 
                 pq:border-[20px]
 
-                em:top-[16%] 
-                em:h-[40vh] 
-                em:w-[60vw] 
-                em:border-[15px]
+                em:top-[15%] 
+                em:h-[43vh] 
+                em:w-[62vw] 
+                em:border-[20px]
 
                 sm:top-[15%] 
                 sm:border-[15px] 
