@@ -47,7 +47,6 @@ function Home() {
             
             <img className="h-[38vh] w-[70vw] bg-orange-dark object-cover rounded-t-full rounded-bl-full z-40 pq:h-[40vh] pq:w-[65vw] em:h-[50vh] em:w-auto md:h-[50vh] md:w-auto lg:h-[55vh] lg:w-[40vw] xl:h-[58vh] xl:w-auto 2xl:h-[70vh] 2xl:w-[37vw] shadow-slate-900/50 shadow-xl" src={Perfil} alt='Profile Photo'/>
 
-
         </div>
 
     )

@@ -115,7 +115,7 @@ function Projects() {
                     open={openJogo}
                     onClose={handleCloseJogo} 
                 >
-                <iframe src="https://github.com/letticiamoura/JogoDaVelha" className='pt-10 m-auto h-[95vh] w-[85vw] object-cover rounded-2xl' onClick={handleCloseJogo}></iframe>
+                <iframe src="https://letticiamoura.github.io/JogoDaVelha/" className='pt-10 m-auto h-[95vh] w-[85vw] object-cover rounded-2xl' onClick={handleCloseJogo}></iframe>
                 </Modal>
                 
             </div>
