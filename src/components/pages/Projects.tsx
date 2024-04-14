@@ -37,7 +37,7 @@ function Projects() {
 
         <div className="h-[85vh] md:h-auto bg-pessego font-gfs-didot p-10">
 
-            <h1 className="text-4xl text-center font-gfs-didot p-5 text-slate-blue ">My Projects</h1>
+            <h1 className="text-4xl font-extrabold text-center font-gfs-didot p-5 text-slate-blue ">My Projects</h1>
 
             {/*<h1 className="text-4xl text-center bg-slate-blue text-pessego h-15 p-3 rounded-md">Projects</h1>
             */}
