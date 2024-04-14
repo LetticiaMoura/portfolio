@@ -43,7 +43,7 @@ function Card( {title, img, description, language, onClick } : cards) {
                 
                 <p className="pb-2 w-42">{language}</p>
 
-                <button onClick={onClick} className="border w-[8vw] p-2 rounded-lg hover:bg-slate-500/50 mb-5">View</button>
+                <button onClick={onClick} className="border w-[15vw] md:w-[8vw] p-2 rounded-lg hover:bg-slate-500/50 mb-5">View</button>
 
             </div>
             

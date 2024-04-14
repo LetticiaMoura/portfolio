@@ -35,9 +35,9 @@ function Projects() {
 
     return(
 
-        <div className="h-auto bg-slate-950 font-gfs-didot p-5">
+        <div className="h-auto bg-pessego font-gfs-didot md:p-20">
 
-            <h1 className="text-4xl font-extrabold text-center font-gfs-didot p-5 text-pessego">My Projects</h1>
+            <h1 className="text-4xl font-extrabold text-center font-gfs-didot p-5 text-slate950">My Projects</h1>
 
             {/*<h1 className="text-4xl text-center bg-slate-blue text-pessego h-15 p-3 rounded-md">Projects</h1>
             */}
