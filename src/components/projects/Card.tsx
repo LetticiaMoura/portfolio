@@ -29,6 +29,8 @@ function Card( {title, img, description, language, onClick } : cards) {
                         font-gfs-didot 
                         text-center 
                         bg-zinc-100
+                        shadow-slate-500/10
+                        shadow-lg
                         transition hover:-translate-y-1 hover:scale-110 duration-300">
 
             <div className="h-auto w-[50vw] sm:w-[30vw] md:w-[40vw]">
@@ -41,7 +43,7 @@ function Card( {title, img, description, language, onClick } : cards) {
                 
                 <p className="pb-2 w-42">{language}</p>
 
-                <button onClick={onClick} className="border p-2 rounded-lg hover:bg-slate-500/50 mb-5">Vizualizar</button>
+                <button onClick={onClick} className="border w-[8vw] p-2 rounded-lg hover:bg-slate-500/50 mb-5">View</button>
 
             </div>
             

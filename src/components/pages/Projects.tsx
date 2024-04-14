@@ -35,13 +35,13 @@ function Projects() {
 
     return(
 
-        <div className="h-[85vh] md:h-auto bg-pessego font-gfs-didot p-10">
+        <div className="h-auto bg-slate-950 font-gfs-didot p-5">
 
-            <h1 className="text-4xl font-extrabold text-center font-gfs-didot p-5 text-slate-blue ">My Projects</h1>
+            <h1 className="text-4xl font-extrabold text-center font-gfs-didot p-5 text-pessego">My Projects</h1>
 
             {/*<h1 className="text-4xl text-center bg-slate-blue text-pessego h-15 p-3 rounded-md">Projects</h1>
             */}
-            <div className="flex justify-around gap-11 p-10 pb-10 overflow-x-scroll scroll-smooth  scrollbar-thin scrollbar-thumb-gray/50 scrollbar-track-pessego">
+            <div className="flex justify-around gap-11 p-10 pb-10 overflow-x-scroll scroll-smooth scrollbar-thin scrollbar-thumb-pessego/5 scrollbar-track-slate-950">
 
             <div className="flex-shrink-0 md:block lg:block xl:block cursor-pointer" >
                     
