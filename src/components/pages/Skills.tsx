@@ -4,9 +4,9 @@ function Skills() {
 
     return(
 
-        <div className="p-16 h-auto bg-slate-blue">
+        <div className="p-16 h-auto bg-slate-950">
 
-            <h1 className="text-center text-4xl font-bold bg-pessego rounded-t-full"> 
+            <h1 className="text-center text-4xl font-bold rounded-t-full"> 
                 <span className="text-pessego bg-slate-blue p-4">Stacks</span> 
             </h1>
             

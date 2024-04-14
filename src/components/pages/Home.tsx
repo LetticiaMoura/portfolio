@@ -18,7 +18,6 @@ function Home() {
     return(
 
         <div className="scroll-smooth focus:scroll-auto flex flex-col-reverse space-y-20 h-auto md:h-screen md:space-y-0 md:flex-row items-center md:justify-around p-10 bg-pessego">
-
             <div className="h-[50vh] text-center md:text-start overflow-hidden">
 
                 <h1 className="pt-7 py-2 text-3xl md:text-4xl xl:text-4xl xl:text-slate-950 text-center md:text-start font-gfs-didot">Hello, my name is<br></br> <span className="font-gfs-didot text-orange-dark text-start text-5xl md:text-6xl">Leticia Moura</span> </h1>
@@ -45,7 +44,7 @@ function Home() {
                             
             </div>
             
-            <img className="h-[38vh] w-[70vw] bg-orange-dark object-cover rounded-t-full rounded-bl-full z-40 pq:h-[40vh] pq:w-[65vw] em:h-[50vh] em:w-auto md:h-[50vh] md:w-auto lg:h-[55vh] lg:w-[25vw] xl:h-[58vh] xl:w-auto 2xl:h-[70vh] 2xl:w-[37vw] shadow-slate-900/50 shadow-xl" src={Perfil} alt='Profile Photo'/>
+            <img className="h-[38vh] w-auto bg-orange-dark object-cover rounded-t-full rounded-bl-full z-40 pq:h-[40vh] em:h-[50vh]  md:h-[50vh] lg:h-[55vh] xl:h-[58vh] 2xl:h-[70vh] shadow-slate-900/50 shadow-xl" src={Perfil} alt='Profile Photo'/>
 
         </div>
 

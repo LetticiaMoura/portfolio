@@ -120,7 +120,7 @@ function Contact() {
                 type='submit' 
                 href="/contact"
                 onClick={handleSubmit}
-                className="w-[30vw] sm:w-[25vw] sm:ml-24 sm:p-3 ml-24 md:w-[20vw] md:ml-20 md:p-4 lg:w-[10vw] lg:p-2 lg:ml-32 p-2 text-orange border-2 border-solid bg-slate-blue border-orange rounded-xl text-center items-center hover:bg-gray/25" 
+                className="w-[30vw] sm:w-[25vw] sm:ml-24 sm:p-3 ml-24 md:w-[20vw] md:ml-20 md:p-4 lg:w-[10vw] lg:p-2 lg:ml-32 p-2 text-orange border-2 border-solid bg-slate-blue border-orange rounded-xl text-center items-center hover:bg-slate-400/10" 
                 >
                 Send
                 </a>
