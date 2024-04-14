@@ -17,13 +17,13 @@ function Home() {
 
     return(
 
-        <div className="scroll-smooth focus:scroll-auto flex flex-col-reverse space-y-20 h-screen md:space-y-0 md:flex-row items-center md:justify-around p-10 bg-pessego">
+        <div className="scroll-smooth focus:scroll-auto flex flex-col-reverse space-y-20 h-auto md:h-screen md:space-y-0 md:flex-row items-center md:justify-around p-10 bg-pessego">
 
             <div className="h-[50vh] text-center md:text-start overflow-hidden">
 
                 <h1 className="pt-7 py-2 text-3xl md:text-4xl xl:text-4xl xl:text-slate-950 text-center md:text-start font-gfs-didot">Hello, my name is<br></br> <span className="font-gfs-didot text-orange-dark text-start text-5xl md:text-6xl">Leticia Moura</span> </h1>
 
-                <p className="md:w-[35vw] font-gfs-didot font-medium">This is my portfolio with some informations about me. Here you are find my stacks, some projects and my social medias. I use the language React to construct the frontend.</p>
+                <p className="md:w-[35vw] font-gfs-didot font-medium">This is my portfolio with some informations about me. Here you are find my stacks, some projects and my social medias.</p>
 
                 <p className='text-xl font-medium text-slate-950 font-gfs-didot'>
                     <span>
@@ -35,11 +35,11 @@ function Home() {
                     </span>
                 </p>
 
-                <div className='flex gap-5 p-1'>
+                <div className='flex items-center gap-5 p-1'>
 
                     <button className='p-2 mt-3 w-42 text-slate-blue font-bold rounded-md border-2 border-solid border-slate-blue hover:border-orange-dark hover:bg-orange/10 text-center transition hover:scale-105'> <Curriculum /> </button>
 
-                    <a href="https://github.com/letticiamoura" target="_blank" className='p-2 mt-3 w-40 text-slate-blue font-bold rounded-md border-2 border-solid border-slate-blue hover:border-orange-dark hover:bg-orange/10 text-center transition hover:scale-105'><GitHubIcon sx={{ marginRight: '0.5rem' }} />GitHub</a>
+                    <a href="https://github.com/letticiamoura" target="_blank" className='p-2 mt-3 w-36 sm:w-40 text-slate-blue font-bold rounded-md border-2 border-solid border-slate-blue hover:border-orange-dark hover:bg-orange/10 text-center transition hover:scale-105'><GitHubIcon sx={{ marginRight: '0.5rem' }} />GitHub</a>
 
                 </div>
                             

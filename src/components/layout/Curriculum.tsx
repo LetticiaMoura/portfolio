@@ -12,7 +12,7 @@ class Curriculum extends Component {
 
         <div>
 
-          <a href = {curriculum} target = "_blank"><FileDownloadIcon /> Download CV </a>
+          <a href = {curriculum} target = "_blank" className='text text-sm font-bold'><FileDownloadIcon/> Download CV </a>
 
         </div>
 
