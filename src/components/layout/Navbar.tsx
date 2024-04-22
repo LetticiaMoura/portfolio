@@ -31,30 +31,29 @@ function Navbar() {
 
     return(
 
-        <nav className="py-8 w-full flex flex-wrap items-center -z-0 justify-around p-2 h-20 bg-pessego relative">
-            
-            <button onClick={handleOpen} className="md:hidden absolute left-[3%] top-[10%]">
-                <img src={menu} alt="Menu" />
+        <nav className="py-8 w-full md:flex flex-wrap items-center z-10 justify-around p-2 h-20 bg-pessego relative">
 
-                {open &&
+        <h1 className="font-gfs-didot text-black/70 text-2xl text-center font-bold opacity-90">LM <span className="text-orange"> | </span> PORTFOLIO</h1>
+  
+            <img src={menu} onClick={handleOpen} alt="Menu" className="md:hidden brightness-50 h-[7vh] absolute left-[2%] top-[22%]"/>
 
-                    menuItems.map((menu) => (
-                        <li key={menu.id} className="decoration-none">
-                            <a className="decoration-none" href={`#${menu.title}`}>{menu.title}</a>
+            {open && (
+                <div className="flex flex-col -z-40 md:hidden justify-center items-center bg-orange/80 h-auto rounded-2xl">
+                    {menuItems.map((menu) => (
+                        <li key={menu.id} className="flex list-none">
+                            <a onClick={() => handleOpen()} className="p-2 decoration-none text-2xl text-white" href={`#${menu.title}`}>{menu.title}</a>
                         </li>
-                    ))
-                
-                }
-                
-            </button>
+                    ))}
+                </div>
+            )}
 
-            <h1 className="font-gfs-didot text-black/70 text-2xl font-bold opacity-90">LM <span className="text-orange"> | </span> PORTFOLIO</h1>
+
 
             <ul className="md:flex justify-around list-none text-center text-slate-950 hidden">
 
                 {menuItems.map(menu => (
 
-                    <li key={menu.id} className="hover:text-orange text-black/70 font-gfs-didot opacity-90 mr-10"> <a className="font-medium hover:underline hover:underline-offset-4 text-2xlt" href={ `#${menu.title}` } > { menu.title } </a> </li>
+                    <li key={menu.id} className="hover:text-orange text-black/70 font-gfs-didot opacity-90 mr-10"> <a className="font-medium hover:underline hover:underline-offset-4 text-2xl" href={ `#${menu.title}` } > { menu.title } </a> </li>
 
                 ))}
 

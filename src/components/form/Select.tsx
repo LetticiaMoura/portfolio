@@ -18,6 +18,7 @@ const Select = ({ name, onChange }: selects) => {
     <div>
 
       <select
+        required
         name={name}
         id={name}
         onChange={onChange}

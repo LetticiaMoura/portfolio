@@ -26,6 +26,11 @@ function Contact() {
         
         e.preventDefault()
 
+        if (!name || !email || !options || !message) {
+            setShowErrAlert(true);
+            return alert('Erro ao enviar, Preencha todos os campos!');
+        }
+
         const templateParams = {
             from_name: name,
             message: message,
@@ -115,7 +120,7 @@ function Contact() {
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                 />
-            
+
                 <a 
                 type='submit' 
                 href="/contact"

@@ -44,7 +44,7 @@ function Home() {
                             
             </div>
             
-            <img className="h-[38vh] w-auto bg-orange-dark object-cover rounded-t-full rounded-bl-full z-40 pq:h-[40vh] em:h-[50vh]  md:h-[50vh] lg:h-[55vh] xl:h-[58vh] 2xl:h-[70vh] shadow-slate-900/50 shadow-xl" src={Perfil} alt='Profile Photo'/>
+            <img className="h-[38vh] w-auto bg-orange-dark object-cover rounded-t-full rounded-bl-full z-0 pq:h-[40vh] em:h-[50vh]  md:h-[50vh] lg:h-[55vh] xl:h-[58vh] 2xl:h-[70vh] shadow-slate-900/50 shadow-xl" src={Perfil} alt='Profile Photo'/>
 
         </div>
 
