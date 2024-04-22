@@ -40,7 +40,7 @@ function Skills() {
                     <i className="devicon-git-plain-wordmark text-pessego text-[5em] md:text-[6em] hover:text-orange p-[10px] box-border 
                     transition hover:-translate-y-2 hover:scale-125 duration-400"></i>
             
-                    <i className="devicon-github-original-wordmark text-pessego text-[5em] md:text-[6em]  hover:text-black brightness-200 p-[10px] box-border 
+                    <i className="devicon-github-original-wordmark text-pessego brightness-125 text-[5em] md:text-[6em] hover:text-white brightness-200 p-[10px] box-border 
                     transition hover:-translate-y-2 hover:scale-125 duration-400"></i>
                 </div>
           

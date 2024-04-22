@@ -34,7 +34,7 @@ function Home() {
                     </span>
                 </p>
 
-                <div className='flex items-center gap-5 p-1'>
+                <div className='flex justify-center items-center gap-5 p-1'>
 
                     <button className='p-2 mt-3 w-42 text-slate-blue font-bold rounded-md border-2 border-solid border-slate-blue hover:border-orange-dark hover:bg-orange/10 text-center transition hover:scale-105'> <Curriculum /> </button>
 
