@@ -1,13 +1,25 @@
+import { FaAddressBook, FaHome } from "react-icons/fa";
+import { AiFillCode } from "react-icons/ai";
+import { BiGridAlt } from "react-icons/bi";
+
 interface IMenuProps {
     alt: string;
-    onClick: () => void;
 }
-export default function Menu({onClick, alt}: IMenuProps) {
+export default function Menu({alt}: IMenuProps) {
     return(
-        <div className="flex flex-col gap-1.5" onClick={onClick} title={alt}>
-            <div className="h-1.5 w-11 bg-slate-950/80 rounded-tl-[20px] rounded-br-[20px]"></div>
-            <div className="h-1.5 w-9 bg-slate-950/80 rounded-tl-[20px] rounded-br-[20px]"></div>
-            <div className="h-1.5 w-11 bg-slate-950/80 rounded-tl-[20px] rounded-br-[20px]"></div>
+        <div className="p-3 rounded-xl flex flex-col gap-5 bg-orange-dark fixed left-2 top-32 shadow-md" title={alt}>
+            <a href="#HOME">
+                <FaHome color="#fff" size={30} />
+            </a>
+            <a href="#SKILLS">
+                <AiFillCode color="#fff" size={30} />
+            </a>
+            <a href="#PROJECTS">
+                <BiGridAlt color="#fff" size={30}  />
+            </a>
+            <a href="#CONTACT">
+                <FaAddressBook color="#fff" size={30} />
+            </a>
         </div>
     )
 }

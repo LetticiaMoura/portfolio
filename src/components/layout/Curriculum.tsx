@@ -1,6 +1,6 @@
 import  { Component } from 'react';
 
-import curriculum from '../../assets/curriculoLM.pdf';
+import curriculum from '../../assets/Leticia Moura - CurriculoDS.pdf';
 
 import FileDownloadIcon from '@mui/icons-material/FileDownload';
 

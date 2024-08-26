@@ -1,10 +1,10 @@
-import Curriculum from '../layout/Curriculum';
+import Curriculum from "../layout/Curriculum";
 
-import GitHubIcon from '@mui/icons-material/GitHub';
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 
-import Perfil from '../../assets/let.png'
+import Perfil from "../../assets/let.png";
 
 function Home() {
 
@@ -17,7 +17,7 @@ function Home() {
 
     return(
 
-        <div className="scroll-smooth focus:scroll-auto flex flex-col-reverse space-y-20 h-auto md:h-screen md:space-y-0 md:flex-row items-center md:justify-around p-10 bg-pessego">
+        <div className="scroll-smooth focus:scroll-auto flex flex-col-reverse space-y-20 h-auto md:h-screen md:space-y-0 md:flex-row items-center md:justify-around md:p-10 bg-pessego">
             <div className="h-[50vh] text-center md:text-start overflow-hidden">
 
                 <h1 className="pt-7 py-2 text-3xl md:text-4xl xl:text-4xl xl:text-slate-950 text-center md:text-start font-gfs-didot">Hello, my name is<br></br> <span className="font-gfs-didot text-orange-dark text-start text-5xl md:text-6xl">Leticia Moura</span> </h1>
@@ -44,7 +44,7 @@ function Home() {
                             
             </div>
             
-            <img className="h-[38vh] w-auto bg-orange-dark object-cover rounded-t-full rounded-bl-full z-0 pq:h-[40vh] em:h-[50vh]  md:h-[50vh] lg:h-[55vh] xl:h-[58vh] 2xl:h-[70vh] shadow-slate-900/50 shadow-xl" src={Perfil} alt='Profile Photo'/>
+            <img className="h-[38vh] w-auto hover:bg-orange-dark bg-orange hover:transition-colors duration-300 hover:scale-105 object-cover rounded-t-full rounded-bl-full z-0 pq:h-[40vh] em:h-[50vh] md:h-[50vh] lg:h-[55vh] xl:h-[58vh] 2xl:h-[70vh] shadow-slate-900/50 shadow-xl" src={Perfil} alt='Profile Photo'/>
 
         </div>
 

@@ -6,6 +6,7 @@ import notes from '../../assets/notes.png';
 import site from '../../assets/website1.jpeg'
 import secretWord from "../../assets/secretWord.png";
 import clinica from "../../assets/clinica.png";
+import ecommerce from "../../assets//ecommerce.png";
 
 import { Modal } from '@mui/material';
 import { useState } from 'react';
@@ -32,6 +33,10 @@ function Projects() {
     const handleOpenClinica = () => setOpenClinica(true);
     const handleCloseClinica = () =>  setOpenClinica(false);
 
+    const [ openEcommerce, setOpenEcommerce ] = useState(false);
+    const handleOpenEcommerce = () => setOpenEcommerce(true);
+    const handleCloseEcommerce = () =>  setOpenEcommerce(false);
+
 
     return(
 
@@ -42,6 +47,25 @@ function Projects() {
             {/*<h1 className="text-4xl text-center bg-slate-blue text-pessego h-15 p-3 rounded-md">Projects</h1>
             */}
             <div className="flex justify-around gap-11 p-10 pb-10 overflow-x-scroll scroll-smooth scrollbar-thin scrollbar-thumb-slate-950/10 scrollbar-track-pessego">
+
+            <div className="flex-shrink-0 md:block lg:block xl:block cursor-pointer" >
+                    
+                <Card 
+                    title='Digital Store'
+                    img={ecommerce}
+                    description='E-commerce Responsivo'
+                    language='React | Typescript | Tailwind CSS'
+                    onClick={handleOpenEcommerce}
+                />
+                
+                <Modal
+                    open={openEcommerce}
+                    onClose={handleCloseEcommerce} 
+                >
+                    <iframe src="hhttps://letticiamoura.github.io/ecommerce-front/" className='pt-10 m-auto h-[95vh] w-[85vw] object-cover rounded-2xl' onClick={handleCloseNote}></iframe>
+                </Modal>
+                
+            </div>  
 
             <div className="flex-shrink-0 md:block lg:block xl:block cursor-pointer" >
                     
@@ -116,26 +140,6 @@ function Projects() {
                     onClose={handleCloseJogo} 
                 >
                 <iframe src="https://letticiamoura.github.io/JogoDaVelha/" className='pt-10 m-auto h-[95vh] w-[85vw] object-cover rounded-2xl' onClick={handleCloseJogo}></iframe>
-                </Modal>
-                
-            </div>
-
-            {/**            OK          */}
-            <div className="flex-shrink-0 md:block lg:block xl:block cursor-pointer" >
-                    
-                <Card 
-                    title='Home Page Makeup'
-                    img={site}
-                    description='makeup showcase'
-                    language='HTML | CSS'
-                    onClick={handleOpen}
-                />
-                
-                <Modal
-                    open={open}
-                    onClose={handleClose} 
-                >
-                <iframe src="https://letticiamoura.github.io/Page-Makeup/" className='pt-10 m-auto h-[95vh] w-[85vw] object-cover rounded-2xl' onClick={handleClose}></iframe>
                 </Modal>
                 
             </div>
