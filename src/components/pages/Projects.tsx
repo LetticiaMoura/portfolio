@@ -3,19 +3,14 @@ import Card from '../projects/Card';
 
 import jogo from '../../assets/jogo_da_velha.png';
 import notes from '../../assets/notes.png';
-import site from '../../assets/website1.jpeg'
 import secretWord from "../../assets/secretWord.png";
 import clinica from "../../assets/clinica.png";
-import ecommerce from "../../assets//ecommerce.png";
+import ecommerce from "../../assets/ecommerce.png";
 
 import { Modal } from '@mui/material';
 import { useState } from 'react';
 
 function Projects() {
-
-    const [ open, setOpen ] = useState(false);
-    const handleOpen = () => setOpen(true);
-    const handleClose = () =>  setOpen(false);
 
     const [ openJogo, setOpenJogo ] = useState(false);
     const handleOpenJogo = () => setOpenJogo(true);
@@ -100,7 +95,7 @@ function Projects() {
                     open={openClinica}
                     onClose={handleCloseClinica}
                 >
-                    <iframe src="https://letticiamoura.github.io/clinica/" className='pt-10 m-auto h-[95vh] w-[85vw] object-cover rounded-2xl'  onClick={handleClose}></iframe>
+                    <iframe src="https://letticiamoura.github.io/clinica/" className='pt-10 m-auto h-[95vh] w-[85vw] object-cover rounded-2xl'  onClick={handleCloseClinica}></iframe>
                 </Modal>
                 
             </div>
@@ -120,7 +115,7 @@ function Projects() {
                     open={openSecret}
                     onClose={handleCloseSecret} 
                 >
-                    <iframe src="https://letticiamoura.github.io/secretWord/" className='pt-10 m-auto h-[95vh] w-[85vw] object-cover rounded-2xl' onClick={handleClose}></iframe>
+                    <iframe src="https://letticiamoura.github.io/secretWord/" className='pt-10 m-auto h-[95vh] w-[85vw] object-cover rounded-2xl' onClick={handleCloseSecret}></iframe>
                 </Modal>
                 
             </div>
