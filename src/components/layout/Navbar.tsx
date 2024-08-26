@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import menu from "../../assets/menu.png";
+import Menu from "./Menu";
 
 function Navbar() {
 
@@ -35,7 +35,9 @@ function Navbar() {
 
         <h1 className="font-gfs-didot text-black/70 text-2xl text-center font-bold opacity-90">LM <span className="text-orange"> | </span> PORTFOLIO</h1>
   
-            <img src={menu} onClick={handleOpen} alt="Menu" className="md:hidden opacity-80 brightness-50 h-[7vh] absolute left-[2%] top-[22%]"/>
+        <div className="md:hidden opacity-80 brightness-50 top-0 py-8 px-2 absolute">
+            <Menu onClick={handleOpen} alt="Menu" />
+        </div>
 
             {open && (
                 <div className="flex flex-col -z-40 md:hidden justify-center items-center bg-orange/80 h-auto rounded-2xl">
